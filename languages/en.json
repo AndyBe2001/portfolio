@@ -1,0 +1,195 @@
+{
+  "Common": {
+    "sitename": "Andy Be Raharison",
+    "portfolio": "portfolio",
+    "home": "Home",
+    "about": "About",
+    "works": "Works",
+    "download": "Download",
+    "resume": "Resume",
+    "or": "or",
+    "scrolldown": "Scroll down",
+    "use": "Using"
+  },
+  "Index": {
+    "home": {
+      "greeting": "Hi, I'm Andy !",
+      "description": "Web developer with a solid foundation in design and development, committed to delivering quality results. Quick learner, adaptable to fast-paced environments."
+    },
+    "stack": {
+      "title": "Stacks",
+      "subtitle": "Frameworks and library I comfortable to",
+      "language": "Language",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "dbandorm": "DB & ORM",
+      "python": "Python"
+    },
+    "works": {
+      "title": "Works",
+      "subtitle": "Accomplished project",
+      "viewproject": "View project",
+      "computervision": {
+        "title": "Deep learning technology for object detection in libraries",
+        "description": "Automated assistant for library surveillance and management."
+      }
+    }
+  },
+  "Work": {
+    "computervision": {
+      "title": "Deep Learning Technology for Object Detection in Libraries",
+      "fact": {
+        "role": "Role I played as",
+        "researcher": "Researcher",
+        "developer": "Developer",
+        "UIUX": "UI / UX Designer",
+        "tool": "Tools we used",
+        "duration": "Project duration",
+        "time": "1 year 6 months",
+        "platform": "Platform"
+      },
+      "context": {
+        "title": "Context",
+        "pandemic": {
+          "title": "World pandemic",
+          "description": "The onset of the global pandemic in early 2020 radically transformed daily life, ushering in a wave of unprecedented restrictions. Governments worldwide imposed strict lockdowns, mandating stay-at-home orders and shuttering businesses deemed non-essential. Social gatherings were banned, and travel came to a virtual standstill as borders closed and flights were grounded. Schools and universities shifted to online learning, disrupting traditional education models. Mask mandates became ubiquitous, altering social interactions and public behavior. These measures aimed to curb the spread of the virus but also brought about significant disruptions to social, economic, and cultural norms."
+        },
+        "restriction": {
+          "title": "The problem",
+          "description": "In the context of health restrictions, many libraries implemented measures limiting the number of simultaneous visitors. Readers were often required to book a time slot in advance to access the facilities. Once inside, libraries implemented social distancing protocols, limiting the number of people in each section, and encouraging the wearing of face masks. These measures aimed to ensure the safety of visitors while allowing limited access to library resources and services."
+        },
+        "goal": {
+          "title": "Our objective",
+          "description": "Based on the background, this project aims to develop a system that combines object recognition and visitor counting, and apply it to the library of Ming Chuan University's Taoyuan campus. From object recognition and real-time counting of visitors, to also detecting prohibited items and violations of internal rules. The counted visitor data is then analyzed to assist librarians in understanding the current situation within the library."
+        }
+      },
+      "timeline": {
+        "title": "Project timeline",
+        "research": {
+          "title": "Research",
+          "duration": "1 year",
+          "audit": "Audit",
+          "technology": "Technology discovery and learning",
+          "stack": "Stack confirmation",
+          "intake": "Project intake and alignment"
+        },
+        "design": {
+          "title": "Design",
+          "duration": "3 months",
+          "ui": "User interface",
+          "feature": "Feature confirmation"
+        },
+        "development": {
+          "title": "Development",
+          "duration": "3 months",
+          "application": "Applying specifications document"
+        }
+      },
+      "feature": {
+        "title": "Project features",
+        "footage": "Live footage",
+        "count": "Visitor count",
+        "detection": "Detect and alert suspicious activity",
+        "analyze": "Analyze previous statistics",
+        "export": "Export statistics with CSV"
+      },
+      "architecture": {
+        "title": "Project architecture",
+        "camera": "Camera recording",
+        "detection": {
+          "title": "Object detection using YOLOv4 algorithm",
+          "basic": "Collect basic features",
+          "map": "Collect feature maps on different layer",
+          "object": "Predict object type and coordinate",
+          "filter": "Filter and validate results"
+        },
+        "tracking": {
+          "title": "Tracking object using DeepSORT algorithm",
+          "predict": "Predict futur coordinate using Kalman filter",
+          "mahalanobis": "Mahalanobis distance",
+          "appearance": "Appearance descriptor",
+          "relation": "Relation between predictions and results",
+          "filter": "Filter and validate result using Hungarian algorithm"
+        },
+        "process": {
+          "title": "Results logical process and save",
+          "count": "Visitor count statistics",
+          "capture": "Visitor illegal behavior capture",
+          "export": "Data export"
+        }
+      },
+      "design": {
+        "title": "Project design",
+        "footage": {
+          "title": "Live footage",
+          "description1": "The live footage is at the main page, occupying the most space.",
+          "description2": "Based on the scene captured by the webcam, people, masks and illegal objects can be identified in real time. And are outlined in green if allowed and red if it's not."
+        },
+        "main": {
+          "title": "Main features",
+          "description1": "Just under the live footage, represented by 2 sections.",
+          "description2": "The first section shows the number of visitor, respectively the current visitor amount in the library and the total amount of the day.",
+          "description3": "The second section shows the list of screenshot took when the system detect suspicious activity, it could be a face mask worn incorrectly or the detection of forbidden object. It shows 4 columns, the date and time, the title of screenshot, open and delete screenshot button."
+        },
+        "statistic": {
+          "title": "Analyze previous statistics",
+          "description1": "The second page shows the statistics section, which helps the administrators to predicts future visitor activities.",
+          "description2": "The right hand side shows the date selector (single or range) and 3 buttons (refresh, switch chart format, export CSV).",
+          "description3": "Then after selection, the result is shown at the left hand side, with the x and y axes representing respectively the time by hour and the amount. If user select a range of date, the amount shows the sum of each date in the range."
+        },
+        "setting": {
+          "title": "Setting",
+          "description1": "Finally the last page shows the setting options.",
+          "description2": "The first option is the detection switch, it allows user to detect specific object or not by checking what should be detected.",
+          "description3": "The second option allows the user to change the alert sound volume when suspicious activites are detected."
+        }
+      }
+    }
+  },
+  "About": {
+    "home": {
+      "itsme": "Hi, I'm Andy",
+      "title": "About me",
+      "presentation": "Since high school, I've worked on diverse projects across industries like supply web development, AI, and cloud architectures. Growing up in a multicultural environment honed my language skills and interpersonal abilities, which I leverage in both professional and personal interactions.",
+      "experience": "I thrive on hands-on project development, covering frontend, backend, and recent focuses on software and cloud architectures. My corporate experience offers deep insights into strategic decision-making, including budgeting, prioritization, and seizing opportunities.",
+      "hobby": "When I'm not working, I enjoy tending to the things that matter most to me, such as maintaining a clean and organized home and prioritizing my health and well-being. Additionally, I have a profound passion for aviation and find solace in spending time at the airport, soaking in the atmosphere and taking moments to unwind. If you have an opportunity you'd like to discuss further, please don't hesitate to reach out to me!"
+    },
+    "experiences": {
+      "title": "Experiences",
+      "infotech": {
+        "title": "Frontend Engineer",
+        "location": "Taipei, Taiwan",
+        "content": {
+          "core": {
+            "title": "Core - Optimization",
+            "detail": "Throughout the development lifecycle, our collective experiences drove us to enhance the deployment system. We automated everything—from end-to-end testing and component testing to containerization. Similarly, during the deployment phase, I acquired proficiency in continuous integration and continuous deployment using GitLab's native tools."
+          },
+          "webapp": {
+            "title": "Web application - Development",
+            "detail": "As a contributor to the company's new project, I actively participated in all phases of application development. From collaborating with software architects, UI/UX design to meticulously overseeing quality assurance, I worked closely with each production team member. This hands-on involvement provided invaluable insights into the entire development lifecycle."
+          }
+        }
+      },
+      "university": {
+        "title": "Computer Vision",
+        "location": "Taoyuan, Taiwan",
+        "detail": "In our final university project, my team and I delved deep into neural networks and computer vision technology. Our mission? To create an automated software solution for efficient library management. From accurately counting students in the library to detecting prohibited items, our system lightened the load for library staff. Managers gained better control over resource allocation, ensuring optimal staffing levels. Our vision was simple: empower libraries with smart technology."
+      }
+    },
+    "certificates": {
+      "title": "Certificates and Prize",
+      "aws": {
+        "title": "AWS Cloud Practitioner",
+        "description": "The AWS Certified Cloud Practitioner validates foundational, high-level understanding of AWS Cloud, services, and terminology.  This is a good starting point on the AWS Certification journey for individuals with no prior IT or cloud experience switching to a cloud career or for line-of-business employees looking for foundational cloud literacy."
+      },
+      "excellence": {
+        "title": "Excellence in Research Project",
+        "description": "This prestigious award is presented personally by the Dean of the Department of Computer Science and Information Engineering to recognize the five project groups with the best performance in the department."
+      },
+      "jury": {
+        "title": "Jury Favorite Research Project",
+        "description": "Invited by Ming Chuan university, some IT professionals anonymously participated in our final project exhibition. They had to judge our work, based on the presentation we gave and the product we shown during the event."
+      }
+    }
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "Common": {
+    "sitename": "Be Raharison Andy",
+    "portfolio": "portfolio",
+    "home": "Acceuil",
+    "about": "À propos",
+    "works": "Travaux",
+    "download": "Télécharger",
+    "resume": "mon CV",
+    "or": "ou",
+    "scrolldown": "Defilez en bas",
+    "use": "Utilisant"
+  },
+  "Index": {
+    "home": {
+      "greeting": "Salut, c'est Andy !",
+      "description": "Développeur web avec une solide base en design et développement, engagé à fournir des résultats de qualité. Apprentissage rapide, adaptable aux environnements dynamiques."
+    },
+    "stack": {
+      "title": "Pile technologique",
+      "subtitle": "Mes frameworks et librairy préférés",
+      "language": "Language",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "dbandorm": "Base de donnée & ORM",
+      "python": "Python"
+    },
+    "works": {
+      "title": "Travaux",
+      "subtitle": "Projets accomplis",
+      "viewproject": "Voir les détails",
+      "computervision": {
+        "title": "Usage du deep learning dans la détection d'objets dans les bibliothèques.",
+        "description": "Assistant automatisé pour la surveillance et la gestion des bibliothèques."
+      }
+    }
+  },
+  "Work": {
+    "computervision": {
+      "title": "Usage du Deep Learning dans la Détection d'Objets dans les Bibliothèques",
+      "fact": {
+        "role": "Mes rôles",
+        "researcher": "Chercheur",
+        "developer": "Developeur",
+        "UIUX": "UI / UX Designeur",
+        "tool": "Mes outils utilisés",
+        "duration": "Durée du projet",
+        "time": "1 an et 6 mois",
+        "platform": "Platforme"
+      },
+      "context": {
+        "title": "Contexte",
+        "pandemic": {
+          "title": "Pandemie mondiale",
+          "description": "L'avènement de la pandémie mondiale au début de 2020 a radicalement transformé la vie quotidienne, inaugurant une vague de restrictions sans précédent. Les gouvernements du monde entier ont imposé des confinements stricts, ordonnant des ordres de rester chez soi et fermant les entreprises jugées non essentielles. Les rassemblements sociaux ont été interdits, et les déplacements ont pratiquement cessé alors que les frontières se fermaient et que les vols étaient suspendus. Les écoles et les universités ont basculé vers l'apprentissage en ligne, perturbant les modèles éducatifs traditionnels. Les mandats de port du masque sont devenus omniprésents, modifiant les interactions sociales et le comportement public. Ces mesures visaient à freiner la propagation du virus, mais ont également entraîné des perturbations significatives dans les normes sociales, économiques et culturelles."
+        },
+        "restriction": {
+          "title": "Le problème",
+          "description": "Dans le contexte des restrictions sanitaires, de nombreuses bibliothèques ont mis en place des mesures limitant le nombre de visiteurs simultanés. Les lecteurs étaient souvent tenus de réserver un créneau horaire à l'avance pour accéder aux installations. Une fois à l'intérieur, les bibliothèques ont mis en œuvre des protocoles de distanciation sociale, limitant le nombre de personnes dans chaque section et encourageant le port du masque facial. Ces mesures visaient à garantir la sécurité des visiteurs tout en permettant un accès limité aux ressources et aux services de la bibliothèque."
+        },
+        "goal": {
+          "title": "Nos objectifs",
+          "description": "Basé sur ce contexte, ce projet vise à développer un système qui combine la reconnaissance d'objets et des comptages de visiteur, et à l'appliquer à la bibliothèque du campus de l'Université Ming Chuan à Taoyuan. De la reconnaissance d'objets et le comptage en temps réel des visiteurs, et tout en détectant également les objets interdits et les violations des règles intérieurs. Les données des visiteurs comptés sont ensuite analysées pour aider les bibliothécaires à comprendre la situation actuelle au sein de la bibliothèque."
+        }
+      },
+      "timeline": {
+        "title": "Calendrier du projet",
+        "research": {
+          "title": "Recherche",
+          "duration": "1 an",
+          "audit": "Audit",
+          "technology": "Découverte et apprentissage technologique",
+          "stack": "Validation de la pile technologique",
+          "intake": "Prise en charge et alignement du projet"
+        },
+        "design": {
+          "title": "Design",
+          "duration": "3 mois",
+          "ui": "Interface utilisateur",
+          "feature": "Confirmation des fonctionnalités"
+        },
+        "development": {
+          "title": "Développement",
+          "duration": "3 mois",
+          "application": "Application du cahier de charge"
+        }
+      },
+      "feature": {
+        "title": "Fonctionnalités du projet",
+        "footage": "Images en direct",
+        "count": "Comptage des visiteurs",
+        "detection": "Détecter et alerter en cas d'activité suspecte",
+        "analyze": "Analyser les statistiques précédentes",
+        "export": "Exporter les statistiques au format CSV"
+      },
+      "architecture": {
+        "title": "Architecture du projet",
+        "camera": "Enregistrement vidéo",
+        "detection": {
+          "title": "Détection d'objets à l'aide de l'algorithme YOLOv4",
+          "basic": "Collecter les caractéristiques de base",
+          "map": "Collecter les cartes de caractéristiques sur différentes couches",
+          "object": "Prédire le type d'objet et ses coordonnées",
+          "filter": "Filtrer et valider les résultats"
+        },
+        "tracking": {
+          "title": "Suivi d'objet à l'aide de l'algorithme DeepSORT",
+          "predict": "Prédire les coordonnées futures à l'aide du Filtre de Kalman",
+          "mahalanobis": "Distance de Mahalanobis",
+          "appearance": "Descripteur d'apparence",
+          "relation": "Relation entre les prédictions et les résultats",
+          "filter": "Filtrer et valider les résultats en utilisant l'algorithme hongrois"
+        },
+        "process": {
+          "title": "Processus logique des résultats et sauvegarde",
+          "count": "Statistiques du nombre de visiteurs",
+          "capture": "Capture des comportements illégaux des visiteurs",
+          "export": "Exportation de données"
+        }
+      },
+      "design": {
+        "title": "Design du projet",
+        "footage": {
+          "title": "Images en direct",
+          "description1": "Les images en direct se trouvent sur la page principale, occupant la plus grande partie de l'espace.",
+          "description2": "En fonction de la scène capturée par la webcam, les personnes, les masques et les objets illégaux peuvent être identifiés en temps réel. Ils sont encadrés en vert s'ils sont autorisés et en rouge s'ils ne le sont pas."
+        },
+        "main": {
+          "title": "Fonctionnalités principales",
+          "description1": "Juste sous les images en direct, représentées par 2 sections.",
+          "description2": "La première section affiche le nombre de visiteurs, respectivement le nombre actuel de visiteurs dans la bibliothèque et le total du jour.",
+          "description3": "La deuxième section affiche la liste des captures d'écran prises lorsque le système détecte une activité suspecte, comme un masque facial mal porté ou la détection d'un objet interdit. Elle présente 4 colonnes : la date et l'heure, le titre de la capture d'écran, ainsi que les boutons pour ouvrir et supprimer la capture d'écran."
+        },
+        "statistic": {
+          "title": "Analyser les statistiques précédentes",
+          "description1": "La deuxième page montre la section des statistiques, qui aide les administrateurs à prédire les activités futures des visiteurs.",
+          "description2": "Le côté droit affiche le sélecteur de date (simple ou plage) et 3 boutons (rafraîchir, changer le format du graphique, exporter en CSV).",
+          "description3": "Ensuite, après la sélection, le résultat est affiché du côté gauche, avec les axes x et y représentant respectivement l'heure et la quantité. Si l'utilisateur sélectionne une plage de dates, la quantité affiche la somme de chaque date dans la plage."
+        },
+        "setting": {
+          "title": "Paramètres",
+          "description1": "Enfin, la dernière page affiche les options de paramétrage.",
+          "description2": "La première option est l'interrupteur de détection, qui permet à l'utilisateur de détecter des objets spécifiques ou non en cochant ce qui doit être détecté.",
+          "description3": "La deuxième option permet à l'utilisateur de modifier le volume du son d'alerte lorsque des activités suspectes sont détectées."
+        }
+      }
+    }
+  },
+  "About": {
+    "home": {
+      "itsme": "Salut, c'est Andy",
+      "title": "À propos de moi",
+      "presentation": "Depuis le lycée, je travaillait sur divers projets dans des secteurs tels que le développement web, l'IA et les architectures cloud. Ayant grandi dans un environnement multiculturel, j'ai perfectionné mes compétences linguistiques et mes capacités interpersonnelles, que je mets à profit  dans mes projets professionnels et personnels.",
+      "experience": "Je prospère dans le développement de projets pratiques, couvrant à la fois le frontend, le backend, et récemment avec un accent particulier sur les architectures cloud. Mon expérience en entreprise m'offre une compréhension approfondie de la prise de décision stratégique, notamment en ce qui concerne le budget, la priorisation, et la saisie des opportunités.",
+      "hobby": "Lorsque je ne travaille pas, j'apprécie de m'occuper des choses qui me tiennent le plus à cœur, comme maintenir un foyer propre, prendre soin de ma santé et mon bien-être. De plus, j'ai une passion profonde pour l'aviation et trouve du réconfort à passer du temps à l'aéroport, en appréciant l'atmosphère et en prenant des moments pour me détendre. Si vous avez une opportunité que vous souhaitez discuter plus en détail, n'hésitez pas à me contacter !"
+    },
+    "experiences": {
+      "title": "Expériences",
+      "infotech": {
+        "title": "Ingénieur Frontend",
+        "location": "Taipei, Taïwan",
+        "content": {
+          "core": {
+            "title": "Cœur - Optimisation",
+            "detail": "Durant tout le cycle de développement, nos expériences collectives nous ont poussés à améliorer le système de déploiement. Nous avons automatisé tous les processus, allant de tests bout en bout et de tests de composants à la conteneurisation. De même, lors de la phase de déploiement, j'ai acquis une maîtrise de l'intégration continue et du déploiement continu en utilisant les outils natifs de GitLab."
+          },
+          "webapp": {
+            "title": "Application web - Dévelopement",
+            "detail": "En tant que contributeur au nouveau projet de l'entreprise, j'ai activement participé à toutes les phases du développement de l'application. De la collaboration avec les architectes logiciels, aux concepteurs UI/UX en passant par la supervision méticuleuse de l'assurance qualité. Cette implication pratique m'a offert des perspectives inestimables sur l'ensemble du cycle de développement."
+          }
+        }
+      },
+      "university": {
+        "title": "Vision par ordinateur",
+        "location": "Taoyuan, Taïwan",
+        "detail": "Dans notre projet universitaire final, mon équipe et moi-même avons plongé profondément dans les réseaux neuronaux et la technologie de vision par ordinateur. Notre mission ? Créer une solution logicielle automatisée pour une gestion efficace de la bibliothèque. De la précise comptabilisation des étudiants dans la bibliothèque à la détection d'articles interdits, notre système a allégé la charge de travail du personnel de la bibliothèque. Les gestionnaires ont bénéficié d'un meilleur contrôle sur l'allocation des ressources, garantissant des niveaux de dotation optimaux. Notre vision était simple : autonomiser les bibliothèques avec une technologie intelligente."
+      }
+    },
+    "certificates": {
+      "title": "Certificats et Prix",
+      "aws": {
+        "title": "AWS Cloud Practitioner",
+        "description": "Le certificat AWS Certified Cloud Practitioner valide une compréhension fondamentale et de haut niveau des services et terminologie du Cloud AWS.  Il s'agit d'un bon point de départ dans le parcours AWS Certification pour les personnes n'ayant aucune expérience préalable en informatique ou en cloud qui se lancent dans une carrière dans ce domaine, ou pour les employés de l'entreprise qui cherchent à acquérir des connaissances de base sur le cloud."
+      },
+      "excellence": {
+        "title": "Excellence dans le Projet de Recherche",
+        "description": "Cette récompense prestigieuse est remise personnellement par le doyen du Département d'informatique et d'ingénierie de l'information pour reconnaître les cinq groupes de projet ayant obtenu les meilleures performances dans le département."
+      },
+      "jury": {
+        "title": "Projet de Recherche Favori du Jury",
+        "description": "Invités par l'Université Ming Chuan, plusieurs professionnels de l'informatique ont participé de manière anonyme à notre exposition de projets finaux. Ils ont évalué notre travail en se basant sur la présentation que nous avons donnée et sur le produit que nous avons présenté lors de l'événement."
+      }
+    }
+  }
+}
