@@ -1,3 +1,5 @@
+import { unstable_setRequestLocale } from "next-intl/server";
+
 import { FooterView } from "@/components/footer/footer-view";
 import { HeaderView } from "@/components/header/header-view";
 import { locales } from "@/configs/i18n";
@@ -14,6 +16,8 @@ export default async function IndexLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
+  unstable_setRequestLocale(params.locale);
+
   return (
     <html lang={params.locale}>
       <body className="dark:bg-dark bg-light text-sm text-gray-900 transition-colors dark:text-white sm:text-base">

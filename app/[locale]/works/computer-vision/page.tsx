@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 
 import { ComputerVisionArchitecture } from "@/components/works/computer-vision/computer-vision-architecture";
 import { ComputerVisionBanner } from "@/components/works/computer-vision/computer-vision-banner";
@@ -13,6 +13,8 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }) {
+  unstable_setRequestLocale(locale);
+
   const t = await getTranslations("Common");
   const r = await getTranslations("Work.computervision");
 

@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 
 import { HomeBanner } from "@/components/home/home-banner";
 import { HomeStack } from "@/components/home/home-stack";
@@ -19,9 +19,11 @@ export async function generateMetadata({
   };
 }
 type Props = {
-  params: { lang: string };
+  params: { locale: string };
 };
 export default async function IndexPage({ params }: Props) {
+  unstable_setRequestLocale(params.locale);
+
   return (
     <main className="w-full px-5">
       <HomeBanner />
