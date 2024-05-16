@@ -1,14 +1,16 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowDown,
+  faDownload,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { getLocale, getTranslations } from "next-intl/server";
 
-import CV_DOWNLOAD_LINK from "@/data/cv-download-link.json";
+import { SlideOnView } from "@/components/transition/slide-on-view";
 import { Link } from "@/navigation";
-import { HomeBannerAction } from "./home-banner-action";
-import { HomeBannerDescription } from "./home-banner-description";
-import { HomeBannerGreeting } from "./home-banner-greeting";
-import { HomeBannerScrolldown } from "./home-banner-scrolldown";
+
+import CV_DOWNLOAD_LINK from "@/data/cv-download-link.json";
 
 export const HomeBanner = async () => {
   const t = await getTranslations("Index.home");
@@ -18,9 +20,13 @@ export const HomeBanner = async () => {
   return (
     <section className="mx-auto flex h-[calc(100dvh-80px)] w-full max-w-5xl flex-col justify-between">
       <div className="mb-20 mt-12 flex w-full flex-1 flex-col justify-center">
-        <HomeBannerGreeting>{t("greeting")}</HomeBannerGreeting>
-        <HomeBannerDescription>{t("description")}</HomeBannerDescription>
-        <HomeBannerAction>
+        <SlideOnView tag="h5">{t("greeting")}</SlideOnView>
+        <SlideOnView
+          tag="h3"
+          className="mb-9 mt-5 text-4xl text-gray-600 dark:text-gray-300">
+          {t("description")}
+        </SlideOnView>
+        <SlideOnView className="flex items-center gap-4">
           <Link
             target="_blank"
             href={CV_DOWNLOAD_LINK[locale as keyof typeof CV_DOWNLOAD_LINK]}
@@ -43,9 +49,15 @@ export const HomeBanner = async () => {
               className="hover:text-primary-600 text-3xl"
             />
           </Link>
-        </HomeBannerAction>
+        </SlideOnView>
       </div>
-      <HomeBannerScrolldown text={ct("scrolldown")} />
+      <SlideOnView className="pb-20">
+        <span className="pr-2">{ct("scrolldown")}</span>
+        <FontAwesomeIcon
+          icon={faArrowDown}
+          className="text-primary-600 animate-bounce"
+        />
+      </SlideOnView>
     </section>
   );
 };

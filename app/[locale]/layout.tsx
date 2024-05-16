@@ -1,7 +1,7 @@
 import { unstable_setRequestLocale } from "next-intl/server";
 
-import { FooterView } from "@/components/footer/footer-view";
-import { HeaderView } from "@/components/header/header-view";
+import { Footer } from "@/components/footer/footer";
+import { Header } from "@/components/header/header";
 import { locales } from "@/configs/i18n";
 import { ThemeProvider } from "@/providers/theme-provider";
 
@@ -22,9 +22,9 @@ export default async function IndexLayout({
     <html lang={params.locale}>
       <body className="dark:bg-dark bg-light text-sm text-gray-900 transition-colors dark:text-white sm:text-base">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <HeaderView />
+          <Header />
           {children}
-          <FooterView />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

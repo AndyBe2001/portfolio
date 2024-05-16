@@ -26,8 +26,10 @@
     "<THIRD_PARTY_MODULES>",
     "<THIRD_PARTY_MODULES>/*",
     "",
-    "^@/(.*)$",
-    "^[./]"
+    "^@/(?!.*\\.json$)(.*)$",
+    "^[./]",
+    "",
+    "^.+\\.json$"
   ],
   "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
   "importOrderTypeScriptVersion": "5.0.0"

@@ -1,8 +1,55 @@
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 
-import { HomeStackContainer } from "./home-stack-container";
-import { HomeStackIcon } from "./home-stack-icon";
-import { HomeStackTitle } from "./home-stack-title";
+import { SlideOnView } from "@/components/transition/slide-on-view";
+import { cn } from "@/utils/tailwindcss";
+
+const HomeStackIcon = ({ src, alt }: { src: string; alt: string }) => {
+  return (
+    <Image
+      src={src}
+      width="0"
+      height="0"
+      alt={alt}
+      sizes="100vw"
+      style={{
+        display: "block",
+        width: "auto",
+        height: "auto",
+        maxHeight: "50px",
+      }}
+    />
+  );
+};
+
+interface HomeStackContainerProps {
+  title: string;
+  className?: string;
+  children: React.ReactNode;
+}
+const HomeStackContainer = ({
+  title,
+  className,
+  children,
+}: HomeStackContainerProps) => {
+  return (
+    <SlideOnView
+      tag="article"
+      className={cn(
+        "bg-primary-50/50 flex min-h-full w-full max-w-xs flex-col gap-5 rounded-2xl border px-8 py-10",
+        className
+      )}>
+      <div
+        className={cn(
+          "mx-auto flex flex-1 flex-col items-center justify-center gap-4 rounded-xl p-4",
+          className
+        )}>
+        {children}
+      </div>
+      <h3 className="text-center text-2xl dark:text-gray-900">{title}</h3>
+    </SlideOnView>
+  );
+};
 
 export const HomeStack = async () => {
   const t = await getTranslations("Index.stack");
@@ -11,7 +58,14 @@ export const HomeStack = async () => {
     <section
       id="stacks"
       className="flex w-full flex-col items-center justify-center gap-16 pb-8 pt-24">
-      <HomeStackTitle title={t("title")} subtitle={t("subtitle")} />
+      <div className="w-full max-w-3xl text-center">
+        <SlideOnView tag="h3" className="text-4xl">
+          {t("title")}
+        </SlideOnView>
+        <SlideOnView tag="h4" className="mt-2 text-gray-600 dark:text-gray-400">
+          {t("subtitle")}
+        </SlideOnView>
+      </div>
       <div className="grid w-fit max-w-5xl grid-rows-5 gap-5 md:grid-cols-2 md:grid-rows-3 lg:grid-cols-4 lg:grid-rows-[auto_auto]">
         <HomeStackContainer title={t("language")}>
           <HomeStackIcon src="/stacks/typescript.png" alt="typescript" />

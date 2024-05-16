@@ -1,8 +1,8 @@
 import dayjs from "dayjs";
 import { getLocale, getTranslations } from "next-intl/server";
+import Image from "next/image";
 
-import { AboutCertificateItem } from "./about-certificate-item";
-import { AboutCertificateTitle } from "./about-certificate-title";
+import { SlideOnView } from "@/components/transition/slide-on-view";
 
 import "dayjs/locale/fr";
 import "dayjs/locale/zh-cn";
@@ -12,6 +12,45 @@ import localizedFormat from "dayjs/plugin/localizedFormat";
 
 dayjs.extend(localizedFormat);
 
+interface AboutCertificateItemProps {
+  title: string;
+  date: string;
+  imageSrc: string;
+  imageAlt: string;
+  children: React.ReactNode;
+}
+const AboutCertificateItem = ({
+  title,
+  date,
+  imageSrc,
+  imageAlt,
+  children,
+}: AboutCertificateItemProps) => (
+  <SlideOnView className="bg-primary-50/50 dark:bg-primary-950/50 flex w-full flex-col items-center gap-4 rounded-2xl border px-8 py-4">
+    <div className="grid h-24 place-items-center">
+      <Image
+        src={imageSrc}
+        width="0"
+        height="0"
+        alt={imageAlt}
+        className="mb-3 rounded-xl"
+        sizes="100vw"
+        style={{
+          display: "block",
+          width: "auto",
+          height: "auto",
+          maxHeight: "96px",
+        }}
+      />
+    </div>
+    <div className="text-center">
+      <h3 className="text-xl leading-normal">{title}</h3>
+      <h5 className="text-gray-600 dark:text-gray-300">{date}</h5>
+    </div>
+    <p className="mt-3 text-justify">{children}</p>
+  </SlideOnView>
+);
+
 export const AboutCertificate = async () => {
   const t = await getTranslations("About.certificates");
 
@@ -20,7 +59,7 @@ export const AboutCertificate = async () => {
 
   return (
     <section className="mx-auto mb-16 w-full max-w-7xl">
-      <AboutCertificateTitle>{t("title")}</AboutCertificateTitle>
+      <SlideOnView className="mb-10 text-4xl">{t("title")}</SlideOnView>
       <article className="grid grid-flow-row grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
         <AboutCertificateItem
           title={t("aws.title")}

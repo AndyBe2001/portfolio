@@ -1,27 +1,21 @@
-"use client";
-
-import { AnimatePresence, motion } from "framer-motion";
-
-import { SLIDE_ON_VIEW } from "@/configs/motion";
 import { cn } from "@/utils/tailwindcss";
+import { SlideOnView } from "../transition/slide-on-view";
 
+interface WorkArchitectureProps {
+  className?: string;
+  children: React.ReactNode;
+}
 export const WorkArchitecture = ({
   className,
   children,
-}: {
-  className?: string;
-  children: React.ReactNode;
-}) => {
+}: WorkArchitectureProps) => {
   return (
-    <AnimatePresence>
-      <motion.div
-        className={cn(
-          "bg-primary-50/50 dark:bg-primary-950/50 rounded-2xl border p-4",
-          className
-        )}
-        {...SLIDE_ON_VIEW}>
-        {children}
-      </motion.div>
-    </AnimatePresence>
+    <SlideOnView
+      className={cn(
+        "bg-primary-50/50 dark:bg-primary-950/50 rounded-2xl border p-4",
+        className
+      )}>
+      {children}
+    </SlideOnView>
   );
 };

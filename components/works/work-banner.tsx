@@ -1,23 +1,22 @@
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 
-import { WorkBannerImage } from "./work-banner-image";
-import { WorkBannerTitle } from "./work-banner-title";
+import { SlideOnView } from "@/components/transition/slide-on-view";
 
-export const WorkBanner = async ({
-  title,
-  imageUrl,
-}: {
+interface WorkBannerProps {
   title: string;
   imageUrl?: string;
-}) => {
+}
+export const WorkBanner = async ({ title, imageUrl }: WorkBannerProps) => {
   const t = await getTranslations("Work.computervision");
 
   return (
     <section className="mx-auto mb-10 flex min-h-[calc(100dvh-80px)] max-w-6xl flex-col items-center justify-center gap-10 text-2xl sm:text-4xl md:text-5xl lg:text-6xl">
-      <WorkBannerTitle>{title}</WorkBannerTitle>
+      <SlideOnView tag="h1" className="text-center">
+        {title}
+      </SlideOnView>
       {imageUrl && (
-        <WorkBannerImage>
+        <SlideOnView className="text-center">
           <Image
             src={imageUrl}
             width="0"
@@ -31,7 +30,7 @@ export const WorkBanner = async ({
               maxHeight: "100%",
             }}
           />
-        </WorkBannerImage>
+        </SlideOnView>
       )}
     </section>
   );
