@@ -5,11 +5,15 @@ import { AnimatePresence, motion } from "framer-motion";
 interface SlideOnViewProps {
   tag?: keyof typeof motion;
   className?: string;
+  delay?: number;
+  duration?: number;
   children: React.ReactNode;
 }
 export const SlideOnView = ({
   tag = "div",
   className,
+  delay = 0.2,
+  duration = 0.4,
   children,
 }: SlideOnViewProps) => {
   const MotionComponent = motion[tag];
@@ -26,8 +30,8 @@ export const SlideOnView = ({
           invisible: { translateY: 50, opacity: 0 },
         }}
         transition={{
-          delay: 0.2,
-          duration: 0.4,
+          delay,
+          duration,
           ease: [0.04, 0.62, 0.23, 0.98],
         }}
         className={className}>

@@ -17,13 +17,15 @@
       "description": "Web developer with a solid foundation in design and development, committed to delivering quality results. Quick learner, adaptable to fast-paced environments."
     },
     "stack": {
-      "title": "Stacks",
-      "subtitle": "Frameworks and library I comfortable to",
-      "language": "Language",
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "dbandorm": "DB & ORM",
-      "python": "Python"
+      "title": "Stacks and skills",
+      "subtitle": "Languages, frameworks and libraries I comfortable with",
+      "language": "Languages",
+      "framework": "Frameworks and Libraries",
+      "dbandorm": "Database and Object Relational Mapping",
+      "tool": "Tools",
+      "more": "Discover more",
+      "3d": "3D modeling and rendering",
+      "ai": "AI / ML and related tools"
     },
     "works": {
       "title": "Works",

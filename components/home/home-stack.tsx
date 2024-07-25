@@ -1,52 +1,36 @@
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 
+import { CollapseOnTrigger } from "@/components/transition/collapse-on-trigger";
 import { SlideOnView } from "@/components/transition/slide-on-view";
+import { Tag } from "@/components/ui/tag";
 import { cn } from "@/utils/tailwindcss";
-
-const HomeStackIcon = ({ src, alt }: { src: string; alt: string }) => {
-  return (
-    <Image
-      src={src}
-      width="0"
-      height="0"
-      alt={alt}
-      sizes="100vw"
-      style={{
-        display: "block",
-        width: "auto",
-        height: "auto",
-        maxHeight: "50px",
-      }}
-    />
-  );
-};
 
 interface HomeStackContainerProps {
   title: string;
   className?: string;
+  delay?: number;
   children: React.ReactNode;
 }
 const HomeStackContainer = ({
   title,
   className,
+  delay,
   children,
 }: HomeStackContainerProps) => {
   return (
     <SlideOnView
       tag="article"
-      className={cn(
-        "bg-primary-50/50 flex min-h-full w-full max-w-xs flex-col gap-5 rounded-2xl border px-8 py-10",
-        className
-      )}>
+      className={cn("min-h-full w-full space-y-2 px-4 py-2", className)}
+      delay={delay}>
+      <h3 className="text-center text-xl">{title}</h3>
       <div
         className={cn(
-          "mx-auto flex flex-1 flex-col items-center justify-center gap-4 rounded-xl p-4",
+          "rounded-xl flex gap-2 flex-wrap justify-center",
           className
         )}>
         {children}
       </div>
-      <h3 className="text-center text-2xl dark:text-gray-900">{title}</h3>
     </SlideOnView>
   );
 };
@@ -66,33 +50,52 @@ export const HomeStack = async () => {
           {t("subtitle")}
         </SlideOnView>
       </div>
-      <div className="grid w-fit max-w-5xl grid-rows-5 gap-5 md:grid-cols-2 md:grid-rows-3 lg:grid-cols-4 lg:grid-rows-[auto_auto]">
+      <div>
         <HomeStackContainer title={t("language")}>
-          <HomeStackIcon src="/stacks/typescript.png" alt="typescript" />
-          <HomeStackIcon src="/stacks/python.png" alt="python" />
+          <Tag className="bg-[#e5532d80]">HTML</Tag>
+          <Tag className="bg-[#2d53e580]">CSS</Tag>
+          <Tag className="bg-[#f7e02580]">Javascript</Tag>
+          <Tag className="bg-[#377cc880]">Typescript</Tag>
+          <Tag className="bg-[#254f7380]">Python</Tag>
         </HomeStackContainer>
-        <HomeStackContainer title={t("frontend")}>
-          <HomeStackIcon src="/stacks/react.png" alt="react" />
-          <HomeStackIcon src="/stacks/nextjs.png" alt="nextjs" />
-          <HomeStackIcon src="/stacks/vuejs.png" alt="vue" />
-          <HomeStackIcon src="/stacks/nuxtjs.png" alt="nuxtjs" />
-        </HomeStackContainer>
-        <HomeStackContainer title={t("backend")}>
-          <HomeStackIcon src="/stacks/expressjs.png" alt="expressjs" />
-          <HomeStackIcon src="/stacks/nestjs.png" alt="nestjs" />
+        <HomeStackContainer title={t("framework")}>
+          <Tag className="bg-[#08d9ff80]">React</Tag>
+          <Tag className="bg-[#00000020] dark:bg-[#FFFFFF20]">Next 14</Tag>
+          <Tag className="bg-[#08c38480]">Vue</Tag>
+          <Tag className="bg-[#08dd8680]">Nuxt</Tag>
+          <Tag className="bg-[#00000020] dark:bg-[#FFFFFF20]">Express</Tag>
+          <Tag className="bg-[#e12a5480]">Nest</Tag>
         </HomeStackContainer>
         <HomeStackContainer title={t("dbandorm")}>
-          <HomeStackIcon src="/stacks/mysql.png" alt="mysql" />
-          <HomeStackIcon src="/stacks/prisma.png" alt="prisma" />
-          <HomeStackIcon src="/stacks/mongodb.png" alt="mongodb" />
-          <HomeStackIcon src="/stacks/mongoose.png" alt="mongoose" />
+          <Tag className="bg-[#3e6e9380]">MySQL</Tag>
+          <Tag className="bg-[#33679180]">Postgres</Tag>
+          <Tag className="bg-[#5a67d880]">Prisma</Tag>
+          <Tag className="bg-[#00800080]">MongoDB</Tag>
+          <Tag className="bg-[#a0333380]">Mongoose</Tag>
+          <Tag className="bg-[#ff006480]">TypeORM</Tag>
         </HomeStackContainer>
-        <HomeStackContainer
-          title={t("python")}
-          className="lg:col-span-4 lg:w-full lg:max-w-none lg:!flex-row lg:items-center">
-          <HomeStackIcon src="/stacks/tensorflow.png" alt="tensorflow" />
-          <HomeStackIcon src="/stacks/opencv.png" alt="opencv" />
+        <HomeStackContainer title={t("tool")}>
+          <Tag className="bg-[#e84d3180]">Git</Tag>
+          <Tag className="bg-[#088db280]">Visual Studio Code</Tag>
+          <Tag className="bg-[#ed5e4a80]">Postman</Tag>
+          <Tag className="bg-[#1d63ed80]">Docker</Tag>
+          <Tag className="bg-[#33679180]">PGAdmin</Tag>
+          <Tag className="bg-[#00800080]">MongoDB Compas</Tag>
         </HomeStackContainer>
+        <CollapseOnTrigger
+          trigger={t("more")}
+          className="mt-4 w-full"
+          contentClassName="grid md:grid-cols-2">
+          <HomeStackContainer title={t("3d")} delay={0}>
+            <Tag className="bg-[#f0660380]">Blender</Tag>
+            <Tag className="bg-[#049ef480]">Three.js</Tag>
+          </HomeStackContainer>
+          <HomeStackContainer title={t("ai")} delay={0}>
+            <Tag className="bg-[#ff6f0080]">Tensorflow</Tag>
+            <Tag className="bg-[#138dff80]">OpenCV</Tag>
+            <Tag className="bg-[#6504d180]">Yolo v4</Tag>
+          </HomeStackContainer>
+        </CollapseOnTrigger>
       </div>
     </section>
   );

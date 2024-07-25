@@ -17,13 +17,15 @@
       "description": "網頁開發人員，具備堅實的設計和開發基礎，致力於提供優質的成果。 快速學習者，適應快節奏的環境。"
     },
     "stack": {
-      "title": "技術棧",
-      "subtitle": "我熟悉的框架和套件",
+      "title": "技術棧與技能",
+      "subtitle": "我常用的語言，框架與套件",
       "language": "語言",
-      "frontend": "前端",
-      "backend": "後端",
+      "framework": "套件",
       "dbandorm": "數據庫和物件關係對映",
-      "python": "Python"
+      "tool": "工具",
+      "more": "查看更多",
+      "3d": "3D 建造與渲染",
+      "ai": "人工智慧/機器學習與相關工具"
     },
     "works": {
       "title": "作品",

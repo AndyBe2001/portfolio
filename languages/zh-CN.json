@@ -17,13 +17,15 @@
       "description": "具有扎实的设计和开发基础的网页开发人员，致力于提供优质的结果。 快速学习者，适应快节奏的环境。"
     },
     "stack": {
-      "title": "技术栈",
-      "subtitle": "我熟悉的框架和套件",
+      "title": "技术栈与技能",
+      "subtitle": "我常用的语言，框架与套件",
       "language": "语言",
-      "frontend": "前端",
-      "backend": "后端",
+      "framework": "框架",
       "dbandorm": "数据库和物件关系对映",
-      "python": "Python"
+      "tool": "工具",
+      "more": "查看更多",
+      "3d": "3D 建造与渲染",
+      "ai": "人工智能/机器学习与相关工具"
     },
     "works": {
       "title": "作品",

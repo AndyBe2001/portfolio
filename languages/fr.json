@@ -17,13 +17,15 @@
       "description": "Développeur web avec une solide base en design et développement, engagé à fournir des résultats de qualité. Apprentissage rapide, adaptable aux environnements dynamiques."
     },
     "stack": {
-      "title": "Pile technologique",
-      "subtitle": "Mes frameworks et librairy préférés",
-      "language": "Language",
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "dbandorm": "Base de donnée & ORM",
-      "python": "Python"
+      "title": "Pile technologique et compétences",
+      "subtitle": "Mes langages, frameworks et librairies préférés",
+      "language": "Languages",
+      "framework": "Frameworks",
+      "dbandorm": "Base de donnée et Mapping Objet-Relationnel",
+      "tool": "Outils",
+      "more": "Découvrir plus",
+      "3d": "Modélisation et rendu 3D",
+      "ai": "IA / ML et outils associés"
     },
     "works": {
       "title": "Travaux",
