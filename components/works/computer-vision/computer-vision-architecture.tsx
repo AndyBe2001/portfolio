@@ -36,7 +36,7 @@ export const ComputerVisionArchitecture = async () => {
             {t("detection.title")}
           </h3>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="flex h-48 w-full flex-col items-center rounded-2xl border px-4 bg-primary-100">
+            <div className="flex h-48 w-full flex-col items-center rounded-2xl px-4 bg-primary-100 dark:bg-primary-950">
               <FontAwesomeIcon
                 icon={faObjectGroup}
                 className="mt-10 text-6xl"
@@ -45,19 +45,19 @@ export const ComputerVisionArchitecture = async () => {
                 {t("detection.basic")}
               </span>
             </div>
-            <div className="flex h-48 w-full flex-col items-center rounded-2xl border px-4 bg-primary-100">
+            <div className="flex h-48 w-full flex-col items-center rounded-2xl px-4 bg-primary-100 dark:bg-primary-950">
               <FontAwesomeIcon icon={faLayerGroup} className="mt-10 text-6xl" />
               <span className="mt-3 text-center font-semibold">
                 {t("detection.map")}
               </span>
             </div>
-            <div className="flex h-48 w-full flex-col items-center rounded-2xl border px-4 bg-primary-100">
+            <div className="flex h-48 w-full flex-col items-center rounded-2xl px-4 bg-primary-100 dark:bg-primary-950">
               <FontAwesomeIcon icon={faMapPin} className="mt-10 text-6xl" />
               <span className="mt-3 text-center font-semibold">
                 {t("detection.object")}
               </span>
             </div>
-            <div className="flex h-48 w-full flex-col items-center rounded-2xl border px-4 bg-primary-100">
+            <div className="flex h-48 w-full flex-col items-center rounded-2xl px-4 bg-primary-100 dark:bg-primary-950">
               <FontAwesomeIcon icon={faFilter} className="mt-10 text-6xl" />
               <span className="mt-3 text-center font-semibold">
                 {t("detection.filter")}
@@ -71,7 +71,7 @@ export const ComputerVisionArchitecture = async () => {
             {t("tracking.title")}
           </h3>
           <div className="grid gap-5 lg:grid-cols-4">
-            <div className="flex h-48 w-full flex-col items-center rounded-2xl border px-4 bg-primary-100">
+            <div className="flex h-48 w-full flex-col items-center rounded-2xl px-4 bg-primary-100 dark:bg-primary-950">
               <FontAwesomeIcon
                 icon={faDiagramNext}
                 className="mt-10 text-6xl"
@@ -80,14 +80,14 @@ export const ComputerVisionArchitecture = async () => {
                 {t("tracking.predict")}
               </span>
             </div>
-            <div className="grid h-full gap-5 rounded-2xl border p-4 sm:grid-cols-2 lg:col-span-2 bg-primary-100">
-              <div className="flex w-full flex-col items-center rounded-2xl border p-4 bg-primary-200">
+            <div className="grid h-full gap-5 rounded-2xl p-4 sm:grid-cols-2 lg:col-span-2 bg-primary-100 dark:bg-primary-950">
+              <div className="flex w-full flex-col items-center rounded-2xl p-4 bg-primary-200/50 dark:bg-primary-900/20">
                 <FontAwesomeIcon icon={faPeopleArrows} className="text-4xl" />
                 <span className="mt-1 text-center font-semibold lg:mt-3">
                   {t("tracking.mahalanobis")}
                 </span>
               </div>
-              <div className="flex w-full flex-col items-center rounded-2xl border p-4 bg-primary-200">
+              <div className="flex w-full flex-col items-center rounded-2xl p-4 bg-primary-200/50 dark:bg-primary-900/20">
                 <FontAwesomeIcon
                   icon={faUsersViewfinder}
                   className="text-4xl"
@@ -100,7 +100,7 @@ export const ComputerVisionArchitecture = async () => {
                 {t("tracking.relation")}
               </h5>
             </div>
-            <div className="flex h-48 w-full flex-col items-center rounded-2xl border px-4 bg-primary-100">
+            <div className="flex h-48 w-full flex-col items-center rounded-2xl px-4 bg-primary-100 dark:bg-primary-950">
               <FontAwesomeIcon
                 icon={faClipboardCheck}
                 className="mt-10 text-6xl"
@@ -117,7 +117,7 @@ export const ComputerVisionArchitecture = async () => {
             {t("process.title")}
           </h3>
           <div className="grid gap-5 sm:grid-cols-3">
-            <div className="flex h-48 w-full flex-col items-center rounded-2xl border px-4 bg-primary-100">
+            <div className="flex h-48 w-full flex-col items-center rounded-2xl px-4 bg-primary-100 dark:bg-primary-950">
               <FontAwesomeIcon
                 icon={faChartSimple}
                 className="mt-10 text-6xl"
@@ -126,13 +126,13 @@ export const ComputerVisionArchitecture = async () => {
                 {t("process.count")}
               </span>
             </div>
-            <div className="flex h-48 w-full flex-col items-center rounded-2xl border px-4 bg-primary-100">
+            <div className="flex h-48 w-full flex-col items-center rounded-2xl px-4 bg-primary-100 dark:bg-primary-950">
               <FontAwesomeIcon icon={faImage} className="mt-10 text-6xl" />
               <span className="mt-3 text-center font-semibold">
                 {t("process.capture")}
               </span>
             </div>
-            <div className="flex h-48 w-full flex-col items-center rounded-2xl border px-4 bg-primary-100">
+            <div className="flex h-48 w-full flex-col items-center rounded-2xl px-4 bg-primary-100 dark:bg-primary-950">
               <FontAwesomeIcon icon={faFileExport} className="mt-10 text-6xl" />
               <span className="mt-3 text-center font-semibold">
                 {t("process.export")}

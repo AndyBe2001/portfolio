@@ -9,7 +9,7 @@ export const WorkContext = ({ className, children }: WorkContextProps) => {
   return (
     <SlideOnView
       className={cn(
-        "bg-primary-50 dark:bg-primary-950/50 rounded-2xl border p-6",
+        "bg-primary-50 dark:bg-primary-950/50 rounded-2xl p-6",
         className
       )}>
       {children}

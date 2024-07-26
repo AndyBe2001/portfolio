@@ -23,7 +23,7 @@ const AboutExperienceItem = ({
   location,
   children,
 }: AboutExperienceItemProps) => (
-  <SlideOnView className="bg-primary-50/50 dark:bg-primary-950/50 flex w-full flex-col gap-10 rounded-2xl border px-8 py-8 md:flex-row">
+  <SlideOnView className="bg-primary-50/50 dark:bg-primary-950/50 flex w-full flex-col gap-10 rounded-2xl px-8 py-8 md:flex-row">
     <div className="w-60 shrink-0">
       <h3 className="text-xl leading-loose">{title}</h3>
       <h5>{duration}</h5>
@@ -40,7 +40,7 @@ export const AboutExperience = async () => {
   dayjs.locale(locale.toLowerCase());
 
   return (
-    <section className="mx-auto mb-16 w-full max-w-7xl">
+    <section className="mx-auto mb-16 w-full max-w-6xl">
       <SlideOnView className="mb-10 text-4xl">{t("title")}</SlideOnView>
       <article className="flex flex-col gap-4">
         <AboutExperienceItem

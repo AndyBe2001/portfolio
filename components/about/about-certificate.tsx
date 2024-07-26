@@ -17,6 +17,7 @@ interface AboutCertificateItemProps {
   date: string;
   imageSrc: string;
   imageAlt: string;
+  link?: string;
   children: React.ReactNode;
 }
 const AboutCertificateItem = ({
@@ -24,9 +25,10 @@ const AboutCertificateItem = ({
   date,
   imageSrc,
   imageAlt,
+  link,
   children,
 }: AboutCertificateItemProps) => (
-  <SlideOnView className="bg-primary-50/50 dark:bg-primary-950/50 flex w-full flex-col items-center gap-4 rounded-2xl border px-8 py-4">
+  <SlideOnView className="bg-primary-50/50 dark:bg-primary-950/50 flex w-full flex-col items-center gap-4 rounded-2xl px-8 py-4">
     <div className="grid h-24 place-items-center">
       <Image
         src={imageSrc}
@@ -48,6 +50,11 @@ const AboutCertificateItem = ({
       <h5 className="text-gray-600 dark:text-gray-300">{date}</h5>
     </div>
     <p className="mt-3 text-justify">{children}</p>
+    {link && (
+      <a href={link} target="_blank" className="underline underline-offset-2">
+        View certificate
+      </a>
+    )}
   </SlideOnView>
 );
 
@@ -58,12 +65,13 @@ export const AboutCertificate = async () => {
   dayjs.locale(locale.toLowerCase());
 
   return (
-    <section className="mx-auto mb-16 w-full max-w-7xl">
+    <section className="mx-auto mb-16 w-full max-w-6xl">
       <SlideOnView className="mb-10 text-4xl">{t("title")}</SlideOnView>
       <article className="grid grid-flow-row grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
         <AboutCertificateItem
           title={t("aws.title")}
           date={dayjs("7 December 2023").format("LL")}
+          link="https://qj1affpgixr8zsed.public.blob.vercel-storage.com/AWS%20Certified%20Cloud%20Practitioner%20Certificate.pdf"
           imageSrc="/aws.png"
           imageAlt="AWS Cloud Practiioner Badge">
           {t("aws.description")}

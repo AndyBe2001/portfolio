@@ -22,6 +22,14 @@ export const ComputerVisionDesign = async () => {
           <br />
           <br />
           {t("footage.description3")}
+          <br />
+          <br />
+          <audio controls>
+            <source
+              src="https://qj1affpgixr8zsed.public.blob.vercel-storage.com/computer-vision_alarm.wav"
+              type="audio/wav"
+            />
+          </audio>
         </WorkDesign>
         {/* Features */}
         <WorkDesign

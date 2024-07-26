@@ -138,7 +138,7 @@
         "statistic": {
           "title": "Analyze previous statistics",
           "description1": "Developed for the administrators in order to predict futur visitor activities using previous statistics.",
-          "description2": "1. Select date at the right hand side (single or range).",
+          "description2": "1. Select date (single or range).",
           "description3": "2. Control results with 3 buttons (refresh chart, switch chart format and export with CSV format)."
         },
         "setting": {
@@ -182,6 +182,7 @@
     },
     "certificates": {
       "title": "Certificates and Prize",
+      "view": "View certificate",
       "aws": {
         "title": "AWS Cloud Practitioner",
         "description": "The AWS Certified Cloud Practitioner validates foundational, high-level understanding of AWS Cloud, services, and terminology.  This is a good starting point on the AWS Certification journey for individuals with no prior IT or cloud experience switching to a cloud career or for line-of-business employees looking for foundational cloud literacy."

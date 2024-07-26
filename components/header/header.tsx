@@ -15,7 +15,7 @@ export const Header = async () => {
         className="mx-auto flex h-full w-full max-w-6xl items-center">
         {/* Title */}
         <Link href="/" className="hidden sm:block text-sm">
-          <h4 className="text-lg leading-none font-semibold dark:text-primary-400">
+          <h4 className="text-lg leading-none font-semibold">
             {t("sitename")}
           </h4>
           {t("aka")}

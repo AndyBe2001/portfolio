@@ -12,7 +12,7 @@ export const WorkArchitecture = ({
   return (
     <SlideOnView
       className={cn(
-        "bg-primary-50/50 dark:bg-primary-950/50 rounded-2xl border p-4",
+        "bg-primary-50/50 dark:bg-primary-950/50 rounded-2xl p-4",
         className
       )}>
       {children}

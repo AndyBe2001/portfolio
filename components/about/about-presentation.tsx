@@ -13,7 +13,7 @@ export const AboutPresentation = async () => {
   const locale = await getLocale();
 
   return (
-    <section className="mx-auto mb-16 grid min-h-[calc(100dvh-80px)] w-full max-w-7xl place-items-center">
+    <section className="mx-auto mb-16 grid min-h-[calc(100dvh-80px)] w-full max-w-6xl place-items-center">
       <div className="grid w-full grid-cols-1 grid-rows-[auto_auto_auto] gap-x-14 gap-y-9 md:grid-cols-[auto_auto] md:grid-rows-[auto_auto]">
         <SlideOnView className="my-auto mx-auto h-fit w-full max-w-xs md:row-span-2">
           <Image

@@ -92,9 +92,9 @@
         "title": "Fonctionnalités du projet",
         "footage": "Images en direct",
         "count": "Comptage des visiteurs",
-        "detection": "Détecter et alerter en cas d'activité suspecte",
-        "analyze": "Analyser les statistiques précédentes",
-        "export": "Exporter les statistiques au format CSV"
+        "detection": "Détection et alerte en cas d'activité suspecte",
+        "analyze": "Analyse des statistiques précédentes",
+        "export": "Export des statistiques au format CSV"
       },
       "architecture": {
         "title": "Architecture du projet",
@@ -125,26 +125,27 @@
         "title": "Design du projet",
         "footage": {
           "title": "Images en direct",
-          "description1": "Les images en direct se trouvent sur la page principale, occupant la plus grande partie de l'espace.",
-          "description2": "En fonction de la scène capturée par la webcam, les personnes, les masques et les objets illégaux peuvent être identifiés en temps réel. Ils sont encadrés en vert s'ils sont autorisés et en rouge s'ils ne le sont pas."
+          "description1": "Fonctionalité le plus attendu du tableau de bord.",
+          "description2": "En fonction du contenu des images, les personnes, les masques et les objets illégaux peuvent être identifiés en temps réel et encadrés en vert s'ils sont autorisés et en rouge s'ils ne le sont pas.",
+          "description3": "Dès qu'un object non autorisé est détectée, le son d'alerte suivante est émise."
         },
         "main": {
           "title": "Fonctionnalités principales",
-          "description1": "Juste sous les images en direct, représentées par 2 sections.",
-          "description2": "La première section affiche le nombre de visiteurs, respectivement le nombre actuel de visiteurs dans la bibliothèque et le total du jour.",
-          "description3": "La deuxième section affiche la liste des captures d'écran prises lorsque le système détecte une activité suspecte, comme un masque facial mal porté ou la détection d'un objet interdit. Elle présente 4 colonnes : la date et l'heure, le titre de la capture d'écran, ainsi que les boutons pour ouvrir et supprimer la capture d'écran."
+          "description1": "Plus de fonctionalité sur le tableau de bord.",
+          "description2": "1. Affichage journalière des statistiques avec le nombre totale de visiteur entrés aujourd'hui et le nombre actuelle de visiteur dans la librairie.",
+          "description3": "2. Affiches une liste de capture d'écran prise lors de la détection d'object non autorisé."
         },
         "statistic": {
-          "title": "Analyser les statistiques précédentes",
-          "description1": "La deuxième page montre la section des statistiques, qui aide les administrateurs à prédire les activités futures des visiteurs.",
-          "description2": "Le côté droit affiche le sélecteur de date (simple ou plage) et 3 boutons (rafraîchir, changer le format du graphique, exporter en CSV).",
-          "description3": "Ensuite, après la sélection, le résultat est affiché du côté gauche, avec les axes x et y représentant respectivement l'heure et la quantité. Si l'utilisateur sélectionne une plage de dates, la quantité affiche la somme de chaque date dans la plage."
+          "title": "Analyse des statistiques précédentes",
+          "description1": "Dévelopé pour les administrateurs afin de prédire les futures flux de visiteur à l'aide des anciennes statistiques.",
+          "description2": "1. Sélection des dates (unique ou intervalle).",
+          "description3": "2. Controls des résultats avec 3 bouttons (rafraichir, changer de format et exporter sous format CSV)."
         },
         "setting": {
           "title": "Paramètres",
-          "description1": "Enfin, la dernière page affiche les options de paramétrage.",
-          "description2": "La première option est l'interrupteur de détection, qui permet à l'utilisateur de détecter des objets spécifiques ou non en cochant ce qui doit être détecté.",
-          "description3": "La deuxième option permet à l'utilisateur de modifier le volume du son d'alerte lorsque des activités suspectes sont détectées."
+          "description1": "Customisation des fonctionalités pour les besoins actuelles.",
+          "description2": "1. Activer ou désactiver la détection des objets sélectionés.",
+          "description3": "2. Changer le volume du son de l'alarme lors de la détection d'objet non autorisé."
         }
       }
     }
@@ -181,6 +182,7 @@
     },
     "certificates": {
       "title": "Certificats et Prix",
+      "view": "Voir le certificat",
       "aws": {
         "title": "AWS Cloud Practitioner",
         "description": "Le certificat AWS Certified Cloud Practitioner valide une compréhension fondamentale et de haut niveau des services et terminologie du Cloud AWS.  Il s'agit d'un bon point de départ dans le parcours AWS Certification pour les personnes n'ayant aucune expérience préalable en informatique ou en cloud qui se lancent dans une carrière dans ce domaine, ou pour les employés de l'entreprise qui cherchent à acquérir des connaissances de base sur le cloud."

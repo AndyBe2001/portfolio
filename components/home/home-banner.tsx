@@ -1,4 +1,4 @@
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
   faArrowDown,
   faDownload,
@@ -40,6 +40,12 @@ export const HomeBanner = async () => {
           <Link target="_blank" href="https://github.com/AndyBe2001">
             <FontAwesomeIcon
               icon={faGithub}
+              className="hover:text-primary-600 text-3xl"
+            />
+          </Link>
+          <Link target="_blank" href="https://www.linkedin.com/in/andybe2001/">
+            <FontAwesomeIcon
+              icon={faLinkedin}
               className="hover:text-primary-600 text-3xl"
             />
           </Link>

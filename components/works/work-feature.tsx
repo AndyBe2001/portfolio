@@ -10,7 +10,7 @@ interface WorkFeatureProps {
   children: React.ReactNode;
 }
 export const WorkFeature = ({ icon, children }: WorkFeatureProps) => (
-  <SlideOnView className="bg-primary-50 dark:bg-primary-950/50 flex h-48 w-48 flex-col items-center rounded-2xl border px-4">
+  <SlideOnView className="bg-primary-50 dark:bg-primary-950/50 flex h-48 w-48 flex-col items-center rounded-2xl px-4">
     <FontAwesomeIcon icon={icon} className="mt-10 text-6xl" />
     <span className="mt-3 text-center font-semibold">{children}</span>
   </SlideOnView>
