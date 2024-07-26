@@ -62,7 +62,7 @@ export const HeaderLanguage = () => {
                 .filter(locale => locale !== currentLocale)
                 .map(locale => (
                   <button
-                    key={locale}
+                    key={`language_${locale}`}
                     className="hover:bg-primary-100 dark:hover:bg-primary-950 w-full whitespace-nowrap rounded-xl px-4 py-1 text-center text-sm"
                     onClick={() => handleChangeLanguage(locale)}>
                     {localesName[locale as keyof typeof localesName]}

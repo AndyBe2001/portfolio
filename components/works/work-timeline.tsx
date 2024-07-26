@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+
 import { SlideOnView } from "@/components/transition/slide-on-view";
 import { cn } from "@/utils/tailwindcss";
 
@@ -23,7 +25,7 @@ export const WorkTimeline = ({ className, items }: WorkTimelineProps) => {
   return (
     <SlideOnView className={className}>
       {items.map(item => (
-        <>
+        <Fragment key={`timeline_${item.title}`}>
           <div
             className={cn(
               gridSpan[item.size ?? 1],
@@ -43,11 +45,13 @@ export const WorkTimeline = ({ className, items }: WorkTimelineProps) => {
                 "mb-5 grid grid-cols-1 gap-y-1 sm:gap-x-4 sm:pr-4"
               )}>
               {item.contents.map(content => (
-                <li key={`${item.title}_${content}`}>{content}</li>
+                <li key={`timeline-content_${item.title}_${content}`}>
+                  {content}
+                </li>
               ))}
             </ul>
           </div>
-        </>
+        </Fragment>
       ))}
     </SlideOnView>
   );

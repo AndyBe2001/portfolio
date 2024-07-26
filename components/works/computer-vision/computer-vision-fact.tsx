@@ -9,14 +9,17 @@ export const ComputerVisionFact = async () => {
     <section className="mx-auto mb-16 grid max-w-6xl grid-cols-2 gap-y-4 gap-x-4 text-base sm:grid-cols-2 md:grid-cols-4 md:justify-items-center md:text-lg">
       <WorkFact
         title={t("role")}
-        contents={[t("researcher"), t("developer"), t("UIUX")]}
+        contents={[t("developer"), t("researcher"), t("UIUX")]}
       />
       <WorkFact
         title={t("tool")}
-        contents={["Visual Studio Code", "Anaconda", "Google Colab"]}
+        contents={["Anaconda", "Google Colab", "Visual Studio Code"]}
       />
       <WorkFact title={t("duration")} contents={[t("time")]} />
-      <WorkFact title={t("platform")} contents={["Windows", "MacOS"]} />
+      <WorkFact
+        title={t("platform")}
+        contents={["Windows", "MacOS", "Linux"]}
+      />
     </section>
   );
 };

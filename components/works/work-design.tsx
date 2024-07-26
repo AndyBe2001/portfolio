@@ -33,7 +33,7 @@ export const WorkDesign = ({
             height: "auto",
           }}
         />
-        <div className="w-full">{children}</div>
+        <div className="w-full text-justify">{children}</div>
       </div>
     </SlideOnView>
   );

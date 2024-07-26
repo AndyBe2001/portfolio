@@ -14,8 +14,11 @@ export const Header = async () => {
         tag="nav"
         className="mx-auto flex h-full w-full max-w-6xl items-center">
         {/* Title */}
-        <Link href="/" className="hidden sm:block">
-          {t("sitename")}
+        <Link href="/" className="hidden sm:block text-sm">
+          <h4 className="text-lg leading-none font-semibold dark:text-primary-400">
+            {t("sitename")}
+          </h4>
+          {t("aka")}
         </Link>
         {/* Links */}
         <ul className="flex flex-1 sm:justify-end sm:gap-4 md:gap-6">

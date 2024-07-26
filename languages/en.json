@@ -1,6 +1,7 @@
 {
   "Common": {
     "sitename": "Andy Be Raharison",
+    "aka": "Andy Tsai / Tsai, Jr-Gang",
     "portfolio": "portfolio",
     "home": "Home",
     "about": "About",
@@ -45,7 +46,7 @@
         "researcher": "Researcher",
         "developer": "Developer",
         "UIUX": "UI / UX Designer",
-        "tool": "Tools we used",
+        "tool": "Tools I used",
         "duration": "Project duration",
         "time": "1 year 6 months",
         "platform": "Platform"
@@ -92,7 +93,7 @@
         "footage": "Live footage",
         "count": "Visitor count",
         "detection": "Detect and alert suspicious activity",
-        "analyze": "Analyze previous statistics",
+        "analyze": "View previous statistics",
         "export": "Export statistics with CSV"
       },
       "architecture": {
@@ -124,26 +125,27 @@
         "title": "Project design",
         "footage": {
           "title": "Live footage",
-          "description1": "The live footage is at the main page, occupying the most space.",
-          "description2": "Based on the scene captured by the webcam, people, masks and illegal objects can be identified in real time. And are outlined in green if allowed and red if it's not."
+          "description1": "Dashboard most requested feature.",
+          "description2": "Based on the footage content, people, masks and illegal objects can be identified in real time and outlined in green if allowed and red if it is not.",
+          "description3": "Once an illegal object is detected, the following alert sound is triggered."
         },
         "main": {
           "title": "Main features",
-          "description1": "Just under the live footage, represented by 2 sections.",
-          "description2": "The first section shows the number of visitor, respectively the current visitor amount in the library and the total amount of the day.",
-          "description3": "The second section shows the list of screenshot took when the system detect suspicious activity, it could be a face mask worn incorrectly or the detection of forbidden object. It shows 4 columns, the date and time, the title of screenshot, open and delete screenshot button."
+          "description1": "More feature on the dashboard.",
+          "description2": "1. Shows daily statistics with total number of entry today and the number of people in the library.",
+          "description3": "2. Contains the list of screenshot took when detecting illegal object."
         },
         "statistic": {
           "title": "Analyze previous statistics",
-          "description1": "The second page shows the statistics section, which helps the administrators to predicts future visitor activities.",
-          "description2": "The right hand side shows the date selector (single or range) and 3 buttons (refresh, switch chart format, export CSV).",
-          "description3": "Then after selection, the result is shown at the left hand side, with the x and y axes representing respectively the time by hour and the amount. If user select a range of date, the amount shows the sum of each date in the range."
+          "description1": "Developed for the administrators in order to predict futur visitor activities using previous statistics.",
+          "description2": "1. Select date at the right hand side (single or range).",
+          "description3": "2. Control results with 3 buttons (refresh chart, switch chart format and export with CSV format)."
         },
         "setting": {
           "title": "Setting",
-          "description1": "Finally the last page shows the setting options.",
-          "description2": "The first option is the detection switch, it allows user to detect specific object or not by checking what should be detected.",
-          "description3": "The second option allows the user to change the alert sound volume when suspicious activites are detected."
+          "description1": "Customize features for current need.",
+          "description2": "1. Enable or disable detections of selected object.",
+          "description3": "2. Change the volume of alert sound when suspicious activity is detected."
         }
       }
     }
