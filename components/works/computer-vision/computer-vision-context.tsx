@@ -9,8 +9,8 @@ export const ComputerVisionContext = async () => {
   return (
     <section className="mx-auto mb-16 max-w-6xl">
       <WorkTitle>{t("title")}</WorkTitle>
-      <article className="grid gap-8 lg:grid-cols-2">
-        <WorkContext className="col-span-2">
+      <article className="grid gap-8 md:grid-cols-2">
+        <WorkContext className="md:col-span-2">
           <h4 className="mb-5 text-4xl">{t("pandemic.title")}</h4>
           <p>{t("pandemic.description")}</p>
         </WorkContext>
