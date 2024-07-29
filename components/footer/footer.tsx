@@ -22,7 +22,7 @@ export const Footer = async () => {
           <li className="hover:text-primary-600">
             <Link
               className="after:bg-primary-600 relative whitespace-nowrap px-1 after:absolute after:left-0 after:top-full after:h-0.5 after:w-full after:translate-y-1 after:scale-x-0 after:opacity-0 after:transition-all  after:content-[''] after:hover:scale-x-100 after:hover:opacity-100"
-              href="/works">
+              href="/#works">
               {t("works")}
             </Link>
           </li>
