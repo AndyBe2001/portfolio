@@ -1,5 +1,6 @@
 import createMiddleware from "next-intl/middleware";
-import { locales, defaultLocale } from "./configs/i18n";
+
+import { defaultLocale, locales } from "./configs/i18n";
 
 export default createMiddleware({
   locales,
@@ -14,7 +15,7 @@ export const config = {
 
     // Set a cookie to remember the previous locale for
     // all requests that have a locale prefix
-    "/(en|fr|zh-CN|zh-TW)/:path*",
+    "/(en|fr|zh-cn|zh-tw)/:path*",
 
     // Enable redirects that add missing locales
     // (e.g. `/pathnames` -> `/en/pathnames`)
