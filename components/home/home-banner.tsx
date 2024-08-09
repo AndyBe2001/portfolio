@@ -20,27 +20,31 @@ export const HomeBanner = async () => {
           className="mb-9 mt-5 text-4xl text-gray-600 dark:text-gray-300">
           {t("description")}
         </SlideOnView>
-        <SlideOnView className="flex items-center gap-4">
+        <SlideOnView className="flex items-center gap-4 flex-wrap">
           <CvDownloadLink />
           <span>{ct("or")}</span>
-          <Link target="_blank" href="https://github.com/AndyBe2001">
-            <FontAwesomeIcon
-              icon={faGithub}
-              className="hover:text-primary-600 text-3xl"
-            />
-          </Link>
-          <Link target="_blank" href="https://www.linkedin.com/in/andybe2001/">
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className="hover:text-primary-600 text-3xl"
-            />
-          </Link>
-          <Link target="_blank" href="mailto:andybe034@gmail.com">
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              className="hover:text-primary-600 text-3xl"
-            />
-          </Link>
+          <div className="flex items-center gap-4">
+            <Link target="_blank" href="https://github.com/AndyBe2001">
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="hover:text-primary-600 text-3xl"
+              />
+            </Link>
+            <Link
+              target="_blank"
+              href="https://www.linkedin.com/in/andybe2001/">
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className="hover:text-primary-600 text-3xl"
+              />
+            </Link>
+            <Link target="_blank" href="mailto:andybe034@gmail.com">
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                className="hover:text-primary-600 text-3xl"
+              />
+            </Link>
+          </div>
         </SlideOnView>
       </div>
       <SlideOnView className="pb-20">

@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { unstable_setRequestLocale } from "next-intl/server";
 
 import { Footer } from "@/components/footer/footer";
@@ -26,6 +27,7 @@ export default async function IndexLayout({
           {children}
           <Footer />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
