@@ -31,7 +31,10 @@ export const MultipleLink = ({
   useClickOutside(toogleElement, () => setVisible(false));
 
   return (
-    <span className={cn("relative flex h-14", className)} {...props}>
+    <span
+      ref={toogleElement}
+      className={cn("relative flex h-14", className)}
+      {...props}>
       <Link
         target="_blank"
         className={cn(
@@ -44,7 +47,6 @@ export const MultipleLink = ({
       </Link>
       {menu && (
         <button
-          ref={toogleElement}
           className={cn(
             "rounded-r-xl bg-primary-600 hover:bg-primary-700 active:bg-primary-800 dark:bg-primary-700 dark:hover:bg-primary-800 dark:active:bg-primary-900 h-full px-4 text-white border-l border-white transition-colors",
             menuClassName
