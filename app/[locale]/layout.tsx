@@ -21,6 +21,12 @@ export default async function IndexLayout({
 
   return (
     <html lang={params.locale}>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="nGRAZR-CeqSsbmWJnVs3B3zoIQWuENGj2ezVpv8vUU8"
+        />
+      </head>
       <body className="dark:bg-dark bg-light text-sm text-gray-900 transition-colors dark:text-white sm:text-base">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
