@@ -45,7 +45,9 @@ export const AboutExperience = async () => {
       <article className="flex flex-col gap-4">
         <AboutExperienceItem
           title={t("infotech.title")}
-          duration={dayjs("1 February 2023").format("LL") + " - Today"}
+          duration={
+            dayjs("1 February 2023").format("LL") + " - " + dayjs("7 June 2024")
+          }
           location={t("infotech.location")}>
           <h3 className="mb-4 text-xl">{t("infotech.content.core.title")}</h3>
           <p className="mb-4 text-justify text-gray-600 dark:text-gray-400">
