@@ -46,7 +46,9 @@ export const AboutExperience = async () => {
         <AboutExperienceItem
           title={t("infotech.title")}
           duration={
-            dayjs("1 February 2023").format("LL") + " - " + dayjs("7 June 2024")
+            dayjs("1 February 2023").format("LL") +
+            " - " +
+            dayjs("7 June 2024").format("LL")
           }
           location={t("infotech.location")}>
           <h3 className="mb-4 text-xl">{t("infotech.content.core.title")}</h3>
