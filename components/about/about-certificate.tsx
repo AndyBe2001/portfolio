@@ -20,43 +20,47 @@ interface AboutCertificateItemProps {
   link?: string;
   children: React.ReactNode;
 }
-const AboutCertificateItem = ({
+const AboutCertificateItem = async ({
   title,
   date,
   imageSrc,
   imageAlt,
   link,
   children,
-}: AboutCertificateItemProps) => (
-  <SlideOnView className="bg-primary-50/50 dark:bg-primary-950/50 flex w-full flex-col items-center gap-4 rounded-2xl px-8 py-4">
-    <div className="grid h-24 place-items-center">
-      <Image
-        src={imageSrc}
-        width="0"
-        height="0"
-        alt={imageAlt}
-        className="mb-3 rounded-xl"
-        sizes="100vw"
-        style={{
-          display: "block",
-          width: "auto",
-          height: "auto",
-          maxHeight: "96px",
-        }}
-      />
-    </div>
-    <div className="text-center">
-      <h3 className="text-xl leading-normal">{title}</h3>
-      <h5 className="text-gray-600 dark:text-gray-300">{date}</h5>
-    </div>
-    <p className="mt-3 text-justify">{children}</p>
-    {link && (
-      <a href={link} target="_blank" className="underline underline-offset-2">
-        View certificate
-      </a>
-    )}
-  </SlideOnView>
-);
+}: AboutCertificateItemProps) => {
+  const t = await getTranslations("About.certificates");
+
+  return (
+    <SlideOnView className="bg-primary-50/50 dark:bg-primary-950/50 flex w-full flex-col items-center gap-4 rounded-2xl px-8 py-4">
+      <div className="grid h-24 place-items-center">
+        <Image
+          src={imageSrc}
+          width="0"
+          height="0"
+          alt={imageAlt}
+          className="mb-3 rounded-xl"
+          sizes="100vw"
+          style={{
+            display: "block",
+            width: "auto",
+            height: "auto",
+            maxHeight: "96px",
+          }}
+        />
+      </div>
+      <div className="text-center">
+        <h3 className="text-xl leading-normal">{title}</h3>
+        <h5 className="text-gray-600 dark:text-gray-300">{date}</h5>
+      </div>
+      <p className="mt-3 text-justify">{children}</p>
+      {link && (
+        <a href={link} target="_blank" className="underline underline-offset-2">
+          {t("view")}
+        </a>
+      )}
+    </SlideOnView>
+  );
+};
 
 export const AboutCertificate = async () => {
   const t = await getTranslations("About.certificates");
