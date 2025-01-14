@@ -2,7 +2,7 @@
 
 import createNextIntlPlugin from "next-intl/plugin";
 
-const withNextIntl = createNextIntlPlugin("./configs/i18n.ts");
+const withNextIntl = createNextIntlPlugin();
 
 const nextConfig = {};
 

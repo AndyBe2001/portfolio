@@ -1,4 +1,4 @@
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 
 import { ComputerVisionArchitecture } from "@/components/works/computer-vision/computer-vision-architecture";
 import { ComputerVisionBanner } from "@/components/works/computer-vision/computer-vision-banner";
@@ -8,13 +8,7 @@ import { ComputerVisionFact } from "@/components/works/computer-vision/computer-
 import { ComputerVisionFeature } from "@/components/works/computer-vision/computer-vision-feature";
 import { ComputerVisionTimeline } from "@/components/works/computer-vision/computer-vision-timeline";
 
-export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
-  unstable_setRequestLocale(locale);
-
+export async function generateMetadata() {
   const t = await getTranslations("Common");
   const r = await getTranslations("Work.computervision");
 
@@ -25,10 +19,7 @@ export async function generateMetadata({
     },
   };
 }
-type Props = {
-  params: { lang: string };
-};
-export default async function IndexPage({ params }: Props) {
+export default async function IndexPage() {
   return (
     <main className="w-full px-5">
       <ComputerVisionBanner />

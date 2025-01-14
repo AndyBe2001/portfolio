@@ -1,0 +1,219 @@
+import enTranslation from "./en";
+
+const translation: typeof enTranslation = {
+  Common: {
+    sitename: "蔡志剛",
+    aka: "Andy Be Raharison",
+    portfolio: "作品集",
+    home: "首頁",
+    about: "關於",
+    works: "作品",
+    download: "下載",
+    resume: "履歷",
+    or: "或",
+    scrolldown: "向下滾動",
+    use: "使用",
+  },
+  Index: {
+    home: {
+      greeting: "嗨，我是志剛！",
+      description:
+        "網頁開發人員，具備堅實的設計和開發基礎，致力於提供優質的成果。 快速學習者，適應快節奏的環境。",
+    },
+    stack: {
+      title: "技術棧與技能",
+      subtitle: "我常用的語言，框架與套件",
+      language: "語言",
+      framework: "套件",
+      dbandorm: "數據庫和物件關係對映",
+      tool: "工具",
+      more: "查看更多",
+      "3d": "3D 建造與渲染",
+      ai: "人工智慧/機器學習與相關工具",
+    },
+    works: {
+      title: "作品",
+      subtitle: "已完成的專案",
+      viewproject: "查看專案",
+      computervision: {
+        title: "運用深度學習技術於圖書館人物偵測",
+        description: "圖書館監視和管理的自動助手。",
+      },
+    },
+  },
+  Work: {
+    computervision: {
+      title: "運用深度學習技術於圖書館人物偵測",
+      fact: {
+        role: "我的角色",
+        researcher: "研究員",
+        developer: "開發者",
+        UIUX: "UI / UX 設計師",
+        tool: "使用的工具",
+        duration: "專案持續時間",
+        time: "1 年 6 個月",
+        platform: "平台",
+      },
+      context: {
+        title: "專案背景",
+        pandemic: {
+          title: "新冠肺炎",
+          description:
+            "2020年初新冠肺炎的爆發徹底改變了日常生活，帶來了前所未有的一波限制措施。世界各國政府實施了嚴格的封鎖措施，命令人們待在家裡，關閉非必要的企業。社交聚會被禁止，隨著邊境關閉和航班停飛，旅行幾乎完全停止。學校和大學轉向線上學習，打破了傳統的教育模式。口罩強制令變得無處不在，改變了社交互動和公眾行為。這些措施旨在遏制病毒的傳播，但也帶來了對社會、經濟和文化規範的重大干擾。",
+        },
+        restriction: {
+          title: "新問題",
+          description:
+            "在健康限制的情境下，許多圖書館實施了限制同時進入人數的措施。讀者通常需要提前預約時間段才能使用設施。一旦進入，圖書館會實施社交距離協議，限制每個區域的人數，並鼓勵戴口罩。這些措施旨在確保訪客的安全，同時允許有限的圖書館資源和服務的訪問。",
+        },
+        goal: {
+          title: "我們的目標",
+          description:
+            "根據背景，本專題研究打造一款結合了物件辨識與人數統計功能，並使用於《銘傳大學桃園校區圖書館》的系統。透過物件辨識，得以即時計算入館人數，同時偵測違禁品與違規行為，並且將計算出的人數資料用作分析，進而協助圖書館員掌握館中的現況。",
+        },
+      },
+      timeline: {
+        title: "專案時間軸",
+        research: {
+          title: "研究",
+          duration: "1 年",
+          audit: "審核",
+          technology: "技術探索和學習",
+          stack: "技術棧確認",
+          intake: "專案收納和對齊",
+        },
+        design: {
+          title: "設計",
+          duration: "3 個月",
+          ui: "用戶界面",
+          feature: "功能確認",
+        },
+        development: {
+          title: "開發",
+          duration: "3 個月",
+          application: "應用規格文件",
+        },
+      },
+      feature: {
+        title: "專案特色",
+        footage: "即時影像",
+        count: "訪客計數",
+        detection: "檢測並警報可疑活動",
+        analyze: "分析以前的統計數據",
+        export: "CSV 格式匯出統計數據",
+      },
+      architecture: {
+        title: "專案架構",
+        camera: "攝像頭錄製",
+        detection: {
+          title: "使用 YOLOv4 演算法進行物件偵測 ",
+          basic: "收集基本特徵",
+          map: "在不同層面上收集特徵圖",
+          object: "預測物體類型和座標",
+          filter: "過濾和驗證結果",
+        },
+        tracking: {
+          title: "使用 DeepSORT 演算法進行物件追蹤 ",
+          predict: "使用卡爾曼濾波器",
+          mahalanobis: "馬哈拉諾比斯距離",
+          appearance: "外觀描述符",
+          relation: "預測和結果之間的關係",
+          filter: "使用匈牙利算法過濾和驗證結果",
+        },
+        process: {
+          title: "結果的邏輯處理和保存",
+          count: "訪客計數統計",
+          capture: "捕獲訪客的非法行為",
+          export: "數據匯出",
+        },
+      },
+      design: {
+        title: "專案設計",
+        footage: {
+          title: "即時影像",
+          description1: "總覽的主要功能。",
+          description2:
+            "根據影像内容即時辨識人，口罩和非法物體。如允許就用綠框顯示，否則用紅框顯示。",
+          description3: "當辨識到非法物體時，系統會自動以下警告聲。",
+        },
+        main: {
+          title: "主要功能",
+          description1: "更多總覽功能。",
+          description2: "1. 顯示當日數據（當日入館總人數，目前館内人數）。",
+          description3: "2. 顯示辨識非法物體時截圖的截圖清單。",
+        },
+        statistic: {
+          title: "分析以前的統計數據",
+          description1: "利用現有的數據預判將來的可能有的人潮。",
+          description2: "1. 選擇日期（單日或期間）。 ",
+          description3:
+            "2. 利用三個按鈕控制結果（更新，切換格式和匯出 CSV 檔）。",
+        },
+        setting: {
+          title: "設置",
+          description1: "已目前的需求功能客制化。",
+          description2: "1. 開關相關物體的偵測。",
+          description3: "2. 調整偵測非法物體時的警告音量。",
+        },
+      },
+    },
+  },
+  About: {
+    home: {
+      itsme: "嗨，我是志剛",
+      title: "關於我",
+      presentation:
+        "自高中以來，我一直致力於跨行業的各種專案，包括供應鏈網絡開發、人工智能和雲架構。 在多元文化環境中長大磨練了我的語言技能和人際能力，我在專業和個人互動中加以利用。",
+      experience:
+        "我擅長於實踐性的專案開發，涵蓋前端、後端以及近期對軟件和雲架構的關注。 我在公司的經驗為我提供了對戰略決策的深刻見解，包括預算編制、優先順序制定和把握機遇。",
+      hobby:
+        "在工作之餘，我喜歡照顧對我最重要的事物，比如保持家裡清潔有序，並優先考慮我的健康和幸福。 此外，我對航空業有著深深的熱情，喜歡在機場度過時間，沉浸在氛圍中，並放鬆身心。 如果您有任何想進一步討論的機會，請隨時與我聯繫！",
+    },
+    experiences: {
+      title: "經驗",
+      infotech: {
+        title: "前端工程師",
+        location: "台灣台北",
+        content: {
+          core: {
+            title: "核心 - 優化",
+            detail:
+              "在整個開發生命周期中，我們的共同經驗推動我們增強了部署系統。 我們自動化了一切 - 從端對端測試和組件測試到容器化。 同樣，在部署階段，我使用 GitLab 的本地工具熟練地進行持續集成和持續部署。",
+          },
+          webapp: {
+            title: "Web 應用程序 - 開發",
+            detail:
+              "作為公司新專案的貢獻者，我積極參與了應用程序開發的所有階段。 從與軟件架構師合作、UI/UX 設計到細緻地監督質量保證，我與每個生產團隊成員密切合作。 這種實踐參與為我提供了對整個開發生命周期的寶貴見解。",
+          },
+        },
+      },
+      university: {
+        title: "計算機視覺",
+        location: "台灣桃園",
+        detail:
+          "在我們的大學期末專案中，我們的團隊深入研究了神經網絡和計算機視覺技術。我們的任務？創建一個自動化軟件解決方案，以實現圖書館管理的高效運作。從準確計算圖書館中的學生人數到檢測禁止物品，我們的系統減輕了圖書館工作人員的負擔。管理者可以更好地控制資源分配，確保最佳的人員配置水平。我們的願景很簡單：利用智能技術賦予圖書館更多力量。",
+      },
+    },
+    certificates: {
+      title: "證書和獎項",
+      view: "查看證書",
+      aws: {
+        title: "AWS 雲從業者",
+        description:
+          "AWS 認證雲從業者證書驗證了對 AWS 雲、服務和術語的基礎、高水平理解。對於沒有先前 IT 或雲經驗的人轉換到雲職業或尋找基礎雲知識的業務線工作人員來說，這是 AWS 認證之旅的良好起點。",
+      },
+      excellence: {
+        title: "專題研究特優獎",
+        description:
+          "這個享有盛譽的獎項由計算機科學與資訊工程系主任親自頒發，旨在表彰系內表現最佳的五個專案組。",
+      },
+      jury: {
+        title: "專題研究青睞獎",
+        description:
+          "明治大學邀請了一些 IT 專業人士參加我們的期末專案展覽。 他們必須根據我們在活動期間給出的演示和展示的產品來評判我們的工作。",
+      },
+    },
+  },
+};
+
+export default translation;

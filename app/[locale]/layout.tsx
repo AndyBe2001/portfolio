@@ -1,10 +1,10 @@
 import { Analytics } from "@vercel/analytics/react";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 
 import { Footer } from "@/components/footer/footer";
 import { Header } from "@/components/header/header";
 import { locales } from "@/configs/i18n";
-import { ThemeProvider } from "@/providers/theme-provider";
+import { ThemeProvider } from "./_provider/theme-provider";
 
 export async function generateStaticParams() {
   return locales.map(locale => ({ locale }));
@@ -12,12 +12,13 @@ export async function generateStaticParams() {
 
 export default async function IndexLayout({
   children,
-  params,
+  ...props
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  unstable_setRequestLocale(params.locale);
+  const params = await props.params;
+  setRequestLocale(params.locale);
 
   return (
     <html lang={params.locale}>

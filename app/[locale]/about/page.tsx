@@ -1,14 +1,10 @@
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 
 import { AboutCertificate } from "@/components/about/about-certificate";
 import { AboutExperience } from "@/components/about/about-experience";
 import { AboutPresentation } from "@/components/about/about-presentation";
 
-export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
+export async function generateMetadata() {
   const t = await getTranslations("Common");
   const r = await getTranslations("About.home");
 
@@ -19,12 +15,8 @@ export async function generateMetadata({
     },
   };
 }
-type Props = {
-  params: { locale: string };
-};
-export default async function IndexPage({ params }: Props) {
-  unstable_setRequestLocale(params.locale);
 
+export default async function IndexPage() {
   return (
     <main className="w-full px-5">
       <AboutPresentation />

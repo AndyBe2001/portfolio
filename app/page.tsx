@@ -1,10 +1,12 @@
-import Dictionary from "@/languages/en.json";
+import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata() {
+  const translation = await getTranslations({ namespace: "", locale: "en" });
+
   return {
-    title: `${Dictionary.Common.sitename} - ${Dictionary.About.home.title}`,
+    title: `${translation("Common.sitename")} - ${translation("About.home.title")}`,
     openGraph: {
-      title: `${Dictionary.Common.sitename} - ${Dictionary.About.home.title}`,
+      title: `${translation("Common.sitename")} - ${translation("About.home.title")}`,
     },
   };
 }
