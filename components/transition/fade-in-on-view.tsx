@@ -1,9 +1,10 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+import { HTMLElementType } from "react";
 
 interface FadeInOnViewProps {
-  tag?: keyof typeof motion;
+  tag?: HTMLElementType;
   className?: string;
   children: React.ReactNode;
 }

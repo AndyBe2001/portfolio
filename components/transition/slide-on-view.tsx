@@ -1,9 +1,10 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+import { HTMLElementType } from "react";
 
 interface SlideOnViewProps {
-  tag?: keyof typeof motion;
+  tag?: HTMLElementType;
   className?: string;
   delay?: number;
   duration?: number;
