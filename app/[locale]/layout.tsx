@@ -4,7 +4,7 @@ import { setRequestLocale } from "next-intl/server";
 import { Footer } from "@/components/footer/footer";
 import { Header } from "@/components/header/header";
 import { locales } from "@/configs/i18n";
-import { ThemeProvider } from "./_provider/theme-provider";
+import { ThemeProvider } from "@/providers/theme-provider";
 
 export async function generateStaticParams() {
   return locales.map(locale => ({ locale }));
