@@ -1,16 +1,11 @@
-import { getTranslations } from "next-intl/server";
+import { LandingPageHero } from "@/views/landing-page/landing-page-hero";
 
-export async function generateMetadata() {
-  const t = await getTranslations("Common");
-
-  return {
-    title: `${t("sitename")} - ${t("portfolio")}`,
-    openGraph: {
-      title: `${t("sitename")} - ${t("portfolio")}`,
-    },
-  };
-}
+export async function generateMetadata() {}
 
 export default async function IndexPage() {
-  return <main className="w-full px-5"></main>;
+  return (
+    <main>
+      <LandingPageHero />
+    </main>
+  );
 }
