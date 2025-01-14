@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { setRequestLocale } from "next-intl/server";
 
 import { Footer } from "@/components/footer/footer";
@@ -35,6 +36,7 @@ export default async function IndexLayout({
           <Footer />
         </ThemeProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
