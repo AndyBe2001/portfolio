@@ -1,9 +1,5 @@
 import { getTranslations } from "next-intl/server";
 
-import { HomeBanner } from "@/components/home/home-banner";
-import { HomeStack } from "@/components/home/home-stack";
-import { HomeWork } from "@/components/home/home-work";
-
 export async function generateMetadata() {
   const t = await getTranslations("Common");
 
@@ -16,11 +12,5 @@ export async function generateMetadata() {
 }
 
 export default async function IndexPage() {
-  return (
-    <main className="w-full px-5">
-      <HomeBanner />
-      <HomeStack />
-      <HomeWork />
-    </main>
-  );
+  return <main className="w-full px-5"></main>;
 }
