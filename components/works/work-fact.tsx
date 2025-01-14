@@ -1,5 +1,3 @@
-import { SlideOnView } from "@/components/transition/slide-on-view";
-
 interface WorkFactProps {
   title: string;
   contents?: string[];
@@ -7,7 +5,7 @@ interface WorkFactProps {
 }
 export const WorkFact = ({ title, contents, children }: WorkFactProps) => {
   return (
-    <SlideOnView>
+    <div>
       <h5 className="leading-loose text-gray-600 dark:text-gray-400">
         {title}
       </h5>
@@ -19,6 +17,6 @@ export const WorkFact = ({ title, contents, children }: WorkFactProps) => {
         </ul>
       )}
       {children}
-    </SlideOnView>
+    </div>
   );
 };

@@ -1,8 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 
-import { SlideOnView } from "@/components/transition/slide-on-view";
-
 interface WorkBannerProps {
   title: string;
   imageUrl?: string;
@@ -12,11 +10,9 @@ export const WorkBanner = async ({ title, imageUrl }: WorkBannerProps) => {
 
   return (
     <section className="mx-auto mb-10 flex min-h-[calc(100dvh-80px)] max-w-6xl flex-col items-center justify-center gap-10 text-2xl sm:text-4xl md:text-5xl lg:text-6xl">
-      <SlideOnView tag="h1" className="text-center">
-        {title}
-      </SlideOnView>
+      <h1 className="text-center">{title}</h1>
       {imageUrl && (
-        <SlideOnView className="text-center">
+        <div className="text-center">
           <Image
             src={imageUrl}
             width="0"
@@ -30,7 +26,7 @@ export const WorkBanner = async ({ title, imageUrl }: WorkBannerProps) => {
               maxHeight: "100%",
             }}
           />
-        </SlideOnView>
+        </div>
       )}
     </section>
   );

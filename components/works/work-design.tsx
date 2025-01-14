@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-import { SlideOnView } from "@/components/transition/slide-on-view";
-
 interface WorkDesignProps {
   title: string;
   imageSrc: string;
@@ -15,7 +13,7 @@ export const WorkDesign = ({
   children,
 }: WorkDesignProps) => {
   return (
-    <SlideOnView>
+    <div>
       <h5 className="mb-5 text-center text-xl text-gray-600 dark:text-gray-400">
         {title}
       </h5>
@@ -35,6 +33,6 @@ export const WorkDesign = ({
         />
         <div className="w-full text-justify">{children}</div>
       </div>
-    </SlideOnView>
+    </div>
   );
 };

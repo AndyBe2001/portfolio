@@ -1,5 +1,4 @@
 import { cn } from "@/utils/tailwindcss";
-import { SlideOnView } from "../transition/slide-on-view";
 
 interface WorkArchitectureProps {
   className?: string;
@@ -10,12 +9,12 @@ export const WorkArchitecture = ({
   children,
 }: WorkArchitectureProps) => {
   return (
-    <SlideOnView
+    <div
       className={cn(
         "bg-primary-50/50 dark:bg-primary-950/50 rounded-2xl p-4",
         className
       )}>
       {children}
-    </SlideOnView>
+    </div>
   );
 };

@@ -1,6 +1,5 @@
 import { Fragment } from "react";
 
-import { SlideOnView } from "@/components/transition/slide-on-view";
 import { cn } from "@/utils/tailwindcss";
 
 interface WorkTimelineProps {
@@ -23,7 +22,7 @@ export const WorkTimeline = ({ className, items }: WorkTimelineProps) => {
   ];
 
   return (
-    <SlideOnView className={className}>
+    <div className={className}>
       {items.map(item => (
         <Fragment key={`timeline_${item.title}`}>
           <div
@@ -53,6 +52,6 @@ export const WorkTimeline = ({ className, items }: WorkTimelineProps) => {
           </div>
         </Fragment>
       ))}
-    </SlideOnView>
+    </div>
   );
 };

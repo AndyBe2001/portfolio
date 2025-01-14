@@ -2,8 +2,6 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { setRequestLocale } from "next-intl/server";
 
-import { Footer } from "@/components/footer/footer";
-import { Header } from "@/components/header/header";
 import { locales } from "@/configs/i18n";
 import { ThemeProvider } from "@/providers/theme-provider";
 
@@ -31,9 +29,7 @@ export default async function IndexLayout({
       </head>
       <body className="dark:bg-dark bg-light text-sm text-gray-900 transition-colors dark:text-white sm:text-base">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Header />
           {children}
-          <Footer />
         </ThemeProvider>
         <Analytics />
         <SpeedInsights />
