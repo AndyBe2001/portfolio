@@ -1,10 +1,11 @@
 import { type Metadata } from "next";
 
-import fontawesomeConfig from "@/configs/fontawesome";
-
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import "./global.css";
 
-fontawesomeConfig.setup();
+import { config } from "@fortawesome/fontawesome-svg-core";
+
+config.autoAddCss = false;
 
 export const metadata: Metadata = {
   title: "Andy - Portfolio",
