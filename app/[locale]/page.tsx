@@ -7,11 +7,11 @@ export async function generateMetadata() {}
 
 export default async function IndexPage() {
   return (
-    <main>
+    <>
       <LandingPageHero />
       <LandingPageFeature />
       <LandingPageShowcase />
       <LandingPageCta />
-    </main>
+    </>
   );
 }

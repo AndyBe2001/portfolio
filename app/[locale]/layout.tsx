@@ -33,10 +33,10 @@ export default async function IndexLayout({
           content="nGRAZR-CeqSsbmWJnVs3B3zoIQWuENGj2ezVpv8vUU8"
         />
       </head>
-      <body className={cn(font.className, "px-4 w-full max-w-7xl")}>
+      <body className={cn(font.className, "")}>
         <NextIntlClientProvider>
           <Header />
-          {children}
+          <main className="px-4 w-full max-w-7xl">{children}</main>
           <Footer />
         </NextIntlClientProvider>
         <Analytics />
