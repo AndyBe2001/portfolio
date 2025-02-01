@@ -3,8 +3,8 @@ import { HeaderLanguage } from "./header-language";
 
 export const Header = async () => {
   return (
-    <header className="sticky top-0 border-b bg-white">
-      <div className="flex justify-between items-center h-14">
+    <header className="sticky top-0 border-b bg-white w-full">
+      <div className="flex justify-between items-center h-14 px-4 w-full mx-auto max-w-7xl">
         <span>Andy</span>
         <nav className="flex gap-4 items-center">
           <Link className="AnimateUnderline" href="/about">
