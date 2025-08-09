@@ -1,11 +1,12 @@
-import { LocaleSwitcher } from "@/components/locale-switcher";
 import { Link } from "@/i18n/navigation";
+import { Button } from "@/ui/button";
+import ShinyText from "@/ui/shiny-text";
 
 export default async function DefaultHeader() {
   return (
-    <header className="sticky top-0 border-b bg-white w-full">
-      <div className="flex justify-between items-center h-14 px-4 w-full mx-auto max-w-7xl">
-        <span>Andy</span>
+    <header className="sticky top-0 bg-white w-full h-16 flex justify-between items-center z-20">
+      <span className={"font-semibold text-xl"}>Andy</span>
+      <div className={"flex gap-4 items-center"}>
         <nav className="flex gap-4 items-center">
           <Link className="AnimateUnderline" href="/about">
             About
@@ -19,8 +20,10 @@ export default async function DefaultHeader() {
           <Link className="AnimateUnderline" href="/contact">
             Contact
           </Link>
-          <LocaleSwitcher />
         </nav>
+        <Button>
+          <ShinyText>Download CV</ShinyText>
+        </Button>
       </div>
     </header>
   );

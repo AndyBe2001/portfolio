@@ -155,6 +155,12 @@
     --tracking-wide: calc(var(--tracking-normal) + 0.025em);
     --tracking-wider: calc(var(--tracking-normal) + 0.05em);
     --tracking-widest: calc(var(--tracking-normal) + 0.1em);
+
+    --animate-shine: shine 5s linear infinite;
+    @keyframes shine {
+        0% { background-position: 100% }
+        100% { background-position: -100% }
+    }
 }
 
 @layer base {
@@ -192,7 +198,6 @@ html {
 body {
   font-family: inherit;
   line-height: inherit;
-  margin: 0;
 }
 
 /* Underline */
