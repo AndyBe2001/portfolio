@@ -26,7 +26,7 @@ export const LocaleSwitcher = () => {
     <Select
       value={locale}
       onValueChange={value => router.replace(pathname, { locale: value })}>
-      <SelectTrigger>
+      <SelectTrigger className={"w-fit"}>
         <SelectValue />
       </SelectTrigger>
       <SelectContent align="end">

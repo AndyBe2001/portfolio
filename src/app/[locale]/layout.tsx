@@ -7,11 +7,13 @@ import { Nunito_Sans } from "next/font/google";
 import React from "react";
 
 import { routing } from "@/i18n/routing";
+import { cn } from "@/utils/tailwindcss";
 
 const font = Nunito_Sans({ subsets: ["latin", "latin-ext"], weight: ["400"] });
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
+    appleWebApp: { title: "Andy - Portfolio" },
     other: {
       "google-site-verification": "nGRAZR-CeqSsbmWJnVs3B3zoIQWuENGj2ezVpv8vUU8",
     },
@@ -35,14 +37,16 @@ export default async function IndexLayout({
 
   return (
     <html lang={locale}>
-      <body className={font.className}>
-        <NextIntlClientProvider>
-          {header}
-          {children}
-          {footer}
-        </NextIntlClientProvider>
-        <Analytics />
-        <SpeedInsights />
+      <body className={cn(font.className)}>
+        <div className={"mx-auto max-w-7xl"}>
+          <NextIntlClientProvider>
+            {header}
+            {children}
+            {footer}
+          </NextIntlClientProvider>
+          <Analytics />
+          <SpeedInsights />
+        </div>
       </body>
     </html>
   );
