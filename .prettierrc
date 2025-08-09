@@ -24,9 +24,9 @@
     "<BUILTIN_MODULES>",
     "",
     "<THIRD_PARTY_MODULES>",
-    "<THIRD_PARTY_MODULES>/*",
     "",
     "^@/(?!.*\\.json$)(.*)$",
+    "",
     "^[./]",
     "",
     "^.+\\.json$"
