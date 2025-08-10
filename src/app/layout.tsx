@@ -2,6 +2,8 @@ import { type Metadata } from "next";
 
 import "./global.css";
 
+import React from "react";
+
 export const metadata: Metadata = {
   title: "Andy - Portfolio",
   openGraph: {

@@ -15,12 +15,12 @@ export default async function DefaultFooter() {
         <ul className="flex gap-4">
           <li>
             <Link href="/about">
-              <LinkedinIcon />
+              <LinkedinIcon fill={"var(--foreground)"} />
             </Link>
           </li>
           <li>
             <Link href="/about">
-              <GithubIcon />
+              <GithubIcon fill={"var(--foreground)"} />
             </Link>
           </li>
           <li>
