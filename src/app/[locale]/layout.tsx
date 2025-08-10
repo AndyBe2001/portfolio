@@ -7,6 +7,7 @@ import { Nunito_Sans } from "next/font/google";
 import React from "react";
 
 import { routing } from "@/i18n/routing";
+import { ThemeProvider } from "@/providers/theme-provider";
 import { cn } from "@/utils/tailwindcss";
 
 const font = Nunito_Sans({ subsets: ["latin", "latin-ext"], weight: ["400"] });
@@ -36,17 +37,19 @@ export default async function IndexLayout({
   setRequestLocale(locale);
 
   return (
-    <html lang={locale}>
-      <body className={cn(font.className)}>
-        <div className={"mx-auto max-w-7xl"}>
+    <html lang={locale} suppressHydrationWarning>
+      <body className={cn(font.className, "overflow-x-clip")}>
+        <div className={"mx-auto max-w-7xl px-5"}>
           <NextIntlClientProvider>
-            {header}
-            {children}
-            {footer}
+            <ThemeProvider attribute="class">
+              {header}
+              {children}
+              {footer}
+            </ThemeProvider>
           </NextIntlClientProvider>
-          <Analytics />
-          <SpeedInsights />
         </div>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

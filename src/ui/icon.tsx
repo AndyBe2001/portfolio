@@ -2,7 +2,7 @@ import React from "react";
 
 type SvgIconProps = React.SVGProps<SVGSVGElement>;
 
-const DEFAULT_SIZE = 24;
+const DEFAULT_SIZE = 20;
 
 export const GithubIcon = (props: SvgIconProps) => {
   return (
