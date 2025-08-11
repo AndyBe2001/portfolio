@@ -3,17 +3,17 @@
 import Lenis from "lenis";
 import React, { ReactNode, useCallback, useLayoutEffect, useRef } from "react";
 
-interface ScrollStackItemProps {
+export interface ScrollStackItemProps {
   itemClassName?: string;
   children: ReactNode;
 }
 
-const ScrollStackItem: React.FC<ScrollStackItemProps> = ({
+export const ScrollStackItem: React.FC<ScrollStackItemProps> = ({
   children,
   itemClassName = "",
 }) => (
   <div
-    className={`scroll-stack-card relative w-full h-80 my-8 p-12 rounded-[40px] shadow-[0_0_30px_rgba(0,0,0,0.1)] box-border origin-top will-change-transform ${itemClassName}`.trim()}
+    className={`scroll-stack-card relative w-full h-80 my-8 p-6 md:12 rounded-[40px] shadow-xl box-border origin-top will-change-transform ${itemClassName}`.trim()}
     style={{
       backfaceVisibility: "hidden",
       transformStyle: "preserve-3d",
@@ -37,7 +37,7 @@ interface ScrollStackProps {
   onStackComplete?: () => void;
 }
 
-const ScrollStack: React.FC<ScrollStackProps> = ({
+export const ScrollStack: React.FC<ScrollStackProps> = ({
   children,
   className = "",
   itemDistance = 100,
@@ -214,6 +214,7 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
       lerp: 0.1,
       syncTouch: true,
       syncTouchLerp: 0.075,
+      overscroll: true,
     });
 
     lenis.on("scroll", handleScroll);
@@ -284,23 +285,21 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
 
   return (
     <div
-      className={`relative w-full h-full overflow-y-auto overflow-x-visible ${className}`.trim()}
+      className={`relative w-full h-full overflow-y-auto !overflow-x-visible ${className}`.trim()}
       ref={scrollerRef}
       style={{
-        overscrollBehavior: "contain",
+        overscrollBehavior: "auto",
         WebkitOverflowScrolling: "touch",
         scrollBehavior: "smooth",
         WebkitTransform: "translateZ(0)",
         transform: "translateZ(0)",
         willChange: "scroll-position",
       }}>
-      <div className="scroll-stack-inner pt-[20vh] px-20 pb-[50rem] min-h-screen">
+      <div className="scroll-stack-inner pt-[20vh] pb-[50rem] min-h-screen !overflow-x-visible">
         {children}
-        {/* Spacer so the last pin can release cleanly */}
-        <div className="scroll-stack-end w-full h-px" />
       </div>
+      {/* Spacer so the last pin can release cleanly */}
+      <div className="scroll-stack-end w-full h-px" />
     </div>
   );
 };
-
-export { ScrollStack, ScrollStackItem };
