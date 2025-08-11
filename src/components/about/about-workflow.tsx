@@ -1,5 +1,5 @@
+import { AnimatedContent } from "@/ui/animated-content";
 import { ScrollFloat } from "@/ui/scroll-float";
-import { ScrollStack, ScrollStackItem } from "@/ui/scroll-stack";
 
 export const AboutWorkflow = () => {
   return (
@@ -7,10 +7,7 @@ export const AboutWorkflow = () => {
       <ScrollFloat containerClassName="mb-4 text-center">
         How I Work
       </ScrollFloat>
-      <ScrollStack
-        className={
-          "absolute bottom-0 left-1/2 -translate-x-1/2 !w-[min(560px, calc(100%-3rem))] max-w-5xl !h-120 no-scrollbar"
-        }>
+      <ul className={"space-y-4"}>
         {[
           {
             title: "Clean Code, Clean Mind",
@@ -38,19 +35,20 @@ export const AboutWorkflow = () => {
               "Whether I’m working solo or collaborating with others, I keep communication transparent. This helps prevent misunderstandings and keeps projects moving forward smoothly.",
           },
         ].map((value, index) => (
-          <ScrollStackItem
-            key={value.title}
-            itemClassName={
-              "bg-card border border-card-foreground/10 max-w-5xl w-full mx-auto"
-            }>
-            <h5 className={"text-3xl font-semibold mb-4"}>
-              <span>{index + 1}. </span>
-              {value.title}
-            </h5>
-            <p className={"text-lg"}>{value.description}</p>
-          </ScrollStackItem>
+          <AnimatedContent key={value.title} reverse>
+            <li
+              className={
+                "bg-card border border-card-foreground/10 max-w-5xl w-full mx-auto rounded-xl p-4"
+              }>
+              <h5 className={"text-2xl font-semibold mb-2"}>
+                <span>{index + 1}. </span>
+                {value.title}
+              </h5>
+              <p className={"text-lg"}>{value.description}</p>
+            </li>
+          </AnimatedContent>
         ))}
-      </ScrollStack>
+      </ul>
     </section>
   );
 };
