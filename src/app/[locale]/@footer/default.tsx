@@ -6,7 +6,7 @@ import { GithubIcon, LinkedinIcon } from "@/ui/icon";
 
 export default async function DefaultFooter() {
   return (
-    <footer className="py-20 space-y-20">
+    <footer className="py-20 space-y-20 border-t">
       <div className="flex justify-between items-center px-4 w-full mx-auto max-w-7xl">
         <span className={"font-semibold text-lg"}>Andy</span>
         <LocaleSwitcher />

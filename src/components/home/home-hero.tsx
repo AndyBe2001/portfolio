@@ -6,7 +6,7 @@ export const HomeHero = () => {
   return (
     <section
       className={
-        "flex flex-col items-center justify-center gap-4 h-[calc(100vh-64px)]"
+        "flex flex-col items-center justify-center gap-4 h-[calc(100vh-384px)]"
       }>
       <SplitText as={"h5"} duration={0.5} splitType={"words"}>
         {"Hi, I'm Andy!"}

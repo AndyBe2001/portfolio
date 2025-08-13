@@ -12,7 +12,7 @@ export const AboutSkill = () => {
       }>
       <div
         className={
-          "absolute bg-foreground/10 top-0 left-1/2 w-dvw h-full -translate-x-1/2 border-t border-b border-border"
+          "absolute bg-foreground/5 top-0 left-1/2 w-dvw h-full -translate-x-1/2"
         }
       />
       <article>
@@ -49,7 +49,7 @@ export const AboutSkill = () => {
             },
           ].map(cat => (
             <CardSwapItem key={cat.title}>
-              <h3 className="font-semibold flex gap-2 items-center mb-1 border-b p-2">
+              <h3 className="font-semibold flex gap-2 items-center mb-1 border-b p-2 bg-card">
                 <cat.icon size={18} />
                 {cat.title}
               </h3>
