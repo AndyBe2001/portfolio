@@ -40,11 +40,9 @@ export default async function IndexLayout({
         <NextIntlClientProvider>
           <ThemeProvider attribute="class">
             <SplashScreen>
-              <div className={"mx-auto max-w-7xl px-5"}>
-                {header}
-                {children}
-                {footer}
-              </div>
+              {header}
+              {children}
+              {footer}
             </SplashScreen>
           </ThemeProvider>
         </NextIntlClientProvider>

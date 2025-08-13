@@ -5,7 +5,7 @@ import { AboutWorkflow } from "@/components/about/about-workflow";
 
 export default function AboutMe() {
   return (
-    <main className={"space-y-16"}>
+    <main className={"space-y-40"}>
       <AboutHero />
       <AboutJourney />
       <AboutSkill />

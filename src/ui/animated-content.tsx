@@ -7,6 +7,8 @@ import React, { ReactNode, useEffect, useRef } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 interface AnimatedContentProps {
+  as?: React.ElementType;
+  className?: string;
   children: ReactNode;
   distance?: number;
   direction?: "vertical" | "horizontal";
@@ -22,6 +24,8 @@ interface AnimatedContentProps {
 }
 
 const AnimatedContent: React.FC<AnimatedContentProps> = ({
+  as = "div",
+  className,
   children,
   distance = 100,
   direction = "vertical",
@@ -35,6 +39,8 @@ const AnimatedContent: React.FC<AnimatedContentProps> = ({
   delay = 0,
   onComplete,
 }) => {
+  const Component = as || "div";
+
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -85,7 +91,11 @@ const AnimatedContent: React.FC<AnimatedContentProps> = ({
     onComplete,
   ]);
 
-  return <div ref={ref}>{children}</div>;
+  return (
+    <Component ref={ref} className={className}>
+      {children}
+    </Component>
+  );
 };
 
 export { AnimatedContent };

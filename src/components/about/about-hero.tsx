@@ -5,7 +5,7 @@ import SplitText from "@/ui/split-text";
 
 export const AboutHero = () => {
   return (
-    <section className="text-center py-32 grid">
+    <section className="text-center py-16 grid">
       <AnimatedContent>
         <figure className="relative size-50 mx-auto mb-6 rounded-full overflow-hidden">
           <Image
