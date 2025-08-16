@@ -1,11 +1,10 @@
+import { ResumeDownload } from "@/components/resume-download";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 import { Link } from "@/i18n/navigation";
-import { Button } from "@/ui/button";
-import { ShinyText } from "@/ui/shiny-text";
 
 export default async function DefaultHeader() {
   return (
-    <header className="top-0 w-full h-16 bg-background z-20 sticky border-b">
+    <header className="top-0 w-full h-16 bg-background z-20 sticky border-b transition-colors">
       <div
         className={
           "mx-auto max-w-7xl px-5 flex justify-between items-center h-full"
@@ -27,9 +26,7 @@ export default async function DefaultHeader() {
           </nav>
           <div className={"flex gap-2 items-center"}>
             <ThemeSwitcher />
-            <Button>
-              <ShinyText>Download CV</ShinyText>
-            </Button>
+            <ResumeDownload />
           </div>
         </div>
       </div>

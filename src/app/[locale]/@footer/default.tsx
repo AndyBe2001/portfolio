@@ -14,24 +14,24 @@ export default async function DefaultFooter() {
       <div className={"flex justify-center items-center flex-col gap-4"}>
         <ul className="flex gap-4">
           <li>
-            <Link href="/about">
+            <Link href="https://www.linkedin.com/in/andybe2001/">
               <LinkedinIcon fill={"var(--foreground)"} />
             </Link>
           </li>
           <li>
-            <Link href="/about">
+            <Link href="https://github.com/AndyBe2001">
               <GithubIcon fill={"var(--foreground)"} />
             </Link>
           </li>
           <li>
-            <Link href="/about">
+            <Link href="mailto:andybe034@gmail.com">
               <Mail />
             </Link>
           </li>
         </ul>
-        <p className="text-center text-sm">
-          &copy; {new Date().getFullYear()} All rights reserved.
-        </p>
+        {/*<p className="text-center text-sm">*/}
+        {/*  &copy; {new Date().getFullYear()} All rights reserved.*/}
+        {/*</p>*/}
       </div>
     </footer>
   );
