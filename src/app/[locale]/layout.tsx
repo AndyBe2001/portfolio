@@ -36,7 +36,7 @@ export default async function IndexLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className={cn("max-w-dvw overflow-x-clip")}>
+      <body className={cn("max-w-dvw overflow-x-clip transition-colors")}>
         <NextIntlClientProvider>
           <ThemeProvider attribute="class">
             <SplashScreen>

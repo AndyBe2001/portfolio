@@ -59,7 +59,7 @@ export const AboutWorkflow = () => {
                   className="my-3 h-36 w-[2px] mx-auto bg-left bg-repeat-y"
                   style={{
                     backgroundImage:
-                      "linear-gradient(to bottom, #000 10%, rgba(255, 255, 255, 0) 0%)",
+                      "linear-gradient(to bottom, var(--color-foreground) 10%, transparent 0%)",
                     backgroundSize: "3px 15px",
                   }}
                 />

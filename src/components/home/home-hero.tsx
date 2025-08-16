@@ -6,14 +6,18 @@ export const HomeHero = () => {
   return (
     <section
       className={
-        "flex flex-col items-center justify-center gap-4 h-[calc(100vh-384px)]"
+        "flex flex-col items-center justify-center gap-4 min-h-[calc(100vh-384px)]"
       }>
-      <SplitText as={"h5"} duration={0.5} splitType={"words"}>
+      <SplitText
+        as={"h5"}
+        duration={0.5}
+        splitType={"words"}
+        className={"text-sm sm:text-base"}>
         {"Hi, I'm Andy!"}
       </SplitText>
       <SplitText
         as={"h1"}
-        className={"text-4xl md:text-5xl font-semibold max-w-4xl"}
+        className={"text-3xl sm:text-4xl md:text-5xl font-semibold max-w-4xl"}
         delay={100}
         splitType={"words"}>
         Full stack developer with a solid foundation in system design and

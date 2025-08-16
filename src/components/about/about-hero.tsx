@@ -20,9 +20,11 @@ export const AboutHero = () => {
         className={"text-4xl font-bold mb-2"}
         as={"h1"}
         splitType={"words"}>
-        Hi, I'm Andy
+        {"Hi, I'm Andy"}
       </SplitText>
-      <SplitText className={"text-lg opacity-60"} splitType={"words"}>
+      <SplitText
+        className={"text-lg text-muted-foreground"}
+        splitType={"words"}>
         Full-stack developer passionate about building things that matter.
       </SplitText>
     </section>
