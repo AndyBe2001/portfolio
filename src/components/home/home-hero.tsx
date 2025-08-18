@@ -1,8 +1,11 @@
 import { ChevronDown } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 
 import SplitText from "@/ui/split-text";
 
-export const HomeHero = () => {
+export const HomeHero = async () => {
+  const translation = await getTranslations("components.home.home-hero");
+
   return (
     <section
       className={
@@ -13,18 +16,17 @@ export const HomeHero = () => {
         duration={0.5}
         splitType={"words"}
         className={"text-sm sm:text-base"}>
-        {"Hi, I'm Andy!"}
+        {translation("greeting")}
       </SplitText>
       <SplitText
         as={"h1"}
         className={"text-3xl sm:text-4xl md:text-5xl font-semibold max-w-4xl"}
         delay={100}
         splitType={"words"}>
-        Full stack developer with a solid foundation in system design and
-        development. Quick learner, adaptable to fast-paced environments.
+        {translation("title")}
       </SplitText>
       <span className={"flex gap-2 items-center mt-20"}>
-        Scroll down{" "}
+        {`${translation("scroll")} `}
         <ChevronDown className={"text-primary animate-bounce"} size={18} />
       </span>
     </section>

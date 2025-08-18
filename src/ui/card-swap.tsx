@@ -36,7 +36,7 @@ const CardSwapItem = forwardRef<HTMLDivElement, CardSwapItemProps>(
     <div
       ref={ref}
       {...rest}
-      className={`absolute top-1/2 left-1/2 rounded-xl border border-card-foreground/10 bg-card [transform-style:preserve-3d] [will-change:transform] [backface-visibility:hidden] ${customClass ?? ""} ${rest.className ?? ""}`.trim()}
+      className={`border-card-foreground/10 bg-card absolute top-1/2 left-1/2 overflow-hidden rounded-xl border [will-change:transform] [backface-visibility:hidden] [transform-style:preserve-3d] ${customClass ?? ""} ${rest.className ?? ""}`.trim()}
     />
   )
 );
@@ -241,7 +241,7 @@ const CardSwap: React.FC<CardSwapProps> = ({
   return (
     <div
       ref={container}
-      className="absolute bottom-0 right-0 transform translate-x-[5%] translate-y-[20%] origin-bottom-right perspective-[900px] overflow-visible max-[768px]:translate-x-[25%] max-[768px]:translate-y-[25%] max-[768px]:scale-[0.80]"
+      className="absolute right-0 bottom-0 origin-bottom-right translate-x-[5%] translate-y-[20%] transform overflow-visible perspective-[900px] max-[768px]:translate-x-[10%] max-[768px]:translate-y-[20%] max-[768px]:scale-[0.80]"
       style={{ width, height }}>
       {rendered}
     </div>
