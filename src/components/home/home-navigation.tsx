@@ -4,10 +4,17 @@ import {
   Info,
   LucideIcon,
 } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 
 import { Link } from "@/i18n/navigation";
 import { ScrollFloat } from "@/ui/scroll-float";
 import { SpotlightCard } from "@/ui/spotlight-card";
+
+const NAVIGATION_ROUTES = [
+  { key: "about", icon: Info },
+  { key: "experience", icon: BriefcaseBusiness },
+  { key: "showcase", icon: GalleryHorizontal },
+];
 
 const NavigationCard = (props: {
   href: string;
@@ -28,44 +35,24 @@ const NavigationCard = (props: {
   );
 };
 
-export const HomeNavigation = () => {
+export const HomeNavigation = async () => {
+  const translation = await getTranslations("components.home.home-navigation");
+
   return (
     <section className={"flex flex-col items-center justify-center gap-4"}>
-      <ScrollFloat>Discover my journey</ScrollFloat>
+      <ScrollFloat>{translation("title")}</ScrollFloat>
       <ul className={"grid lg:grid-cols-3 gap-4"}>
-        <li>
-          <NavigationCard
-            href={"/about"}
-            icon={Info}
-            title={"About Me"}
-            quote={"The person behind the code"}
-            description={
-              "Get to know my background, passions, and what drives me to create. A quick look at the values and experiences that shape my work."
-            }
-          />
-        </li>
-        <li>
-          <NavigationCard
-            href={"/experience"}
-            icon={BriefcaseBusiness}
-            title={"My Experiences"}
-            quote={"Lessons from the field"}
-            description={
-              "From high school projects to professional challenges, explore the milestones, skills, and insights I’ve gained along the way."
-            }
-          />
-        </li>
-        <li>
-          <NavigationCard
-            href={"/showcase"}
-            icon={GalleryHorizontal}
-            title={"Project Showcase"}
-            quote={"Ideas brought to life"}
-            description={
-              "A curated selection of my favorite projects—each with its story, challenges, and creative solutions."
-            }
-          />
-        </li>
+        {NAVIGATION_ROUTES.map(item => (
+          <li key={item.key}>
+            <NavigationCard
+              href={`/${item.key}`}
+              icon={item.icon}
+              title={translation(`${item.key}.title`)}
+              quote={translation(`${item.key}.quote`)}
+              description={translation(`${item.key}.description`)}
+            />
+          </li>
+        ))}
       </ul>
     </section>
   );

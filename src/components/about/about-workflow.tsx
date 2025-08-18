@@ -1,46 +1,21 @@
 import { Globe } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 import React from "react";
 
 import { AnimatedContent } from "@/ui/animated-content";
 import { ScrollFloat } from "@/ui/scroll-float";
 
-const WORKFLOWS = [
-  {
-    title: "Clean Code, Clean Mind",
-    description:
-      "I believe code should be as easy to read as it is to run. This means consistent structure, meaningful naming, and thoughtful organization—making it easier to maintain, scale, and collaborate on.",
-  },
-  {
-    title: "User-First Approach",
-    description:
-      "Technology only matters if it solves a real problem. I start by understanding the needs, behaviors, and expectations of the people using the product, ensuring the final solution feels natural and intuitive.",
-  },
-  {
-    title: "Scalable by Design",
-    description:
-      "I design systems with tomorrow in mind. Whether it’s database structure, API architecture, or cloud deployment, I ensure solutions can grow without sacrificing performance.",
-  },
-  {
-    title: "Iterate and Improve",
-    description:
-      "No first version is ever the final one. I work in cycles—design, test, get feedback, and refine—so the end result is polished and truly meets its goals.",
-  },
-  {
-    title: "Clear and Open Communication",
-    description:
-      "Whether I’m working solo or collaborating with others, I keep communication transparent. This helps prevent misunderstandings and keeps projects moving forward smoothly.",
-  },
-];
+export const AboutWorkflow = async () => {
+  const translation = await getTranslations("components.about.about-workflow");
 
-export const AboutWorkflow = () => {
   return (
     <section>
       <ScrollFloat containerClassName="mb-20 text-center">
-        How I Work
+        {translation("title")}
       </ScrollFloat>
       <ul>
-        {WORKFLOWS.map((value, index) => (
-          <React.Fragment key={value.title}>
+        {[0, 1, 2, 3, 4].map(value => (
+          <React.Fragment key={value}>
             <AnimatedContent
               as={"li"}
               className={"flex flex-col items-center max-w-2xl mx-auto"}
@@ -48,12 +23,14 @@ export const AboutWorkflow = () => {
               <span className="flex size-24 items-center justify-center rounded-full border-2 border-foreground">
                 <Globe />
               </span>
-              <h2 className="my-2 text-3xl font-medium">{value.title}</h2>
+              <h2 className="my-2 text-3xl font-medium">
+                {translation(`contents.${value}.title`)}
+              </h2>
               <p className="text-muted-foreground text-center">
-                {value.description}
+                {translation(`contents.${value}.description`)}
               </p>
             </AnimatedContent>
-            {index < WORKFLOWS.length - 1 && (
+            {value !== 4 && (
               <AnimatedContent reverse>
                 <div
                   className="my-3 h-36 w-[2px] mx-auto bg-left bg-repeat-y"
