@@ -1,0 +1,384 @@
+{
+  "components": {
+    "resume-download": "Download CV",
+    "theme-switcher": {
+      "toggle": "Toggle theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "header": {
+      "header-navigation": {
+        "about": "About",
+        "experience": "Experience",
+        "showcase": "Showcase"
+      }
+    },
+    "home": {
+      "home-hero": {
+        "greeting": "Hi, I'm Andy!",
+        "title": "Full stack developer with a solid foundation in system design and development. Quick learner, adaptable to fast-paced environments.",
+        "scroll": "Scroll down"
+      },
+      "home-navigation": {
+        "title": "Discover my journey",
+        "about": {
+          "title": "About me",
+          "quote": "The person behind the code",
+          "description": "Get to know my background, passions, and what drives me to create. A quick look at the values and experiences that shape my work."
+        },
+        "experience": {
+          "title": "My experiences",
+          "quote": "TLessons from the field",
+          "description": "From high school projects to professional challenges, explore the milestones, skills, and insights I’ve gained along the way."
+        },
+        "showcase": {
+          "title": "Project showcase",
+          "quote": "Ideas brought to life",
+          "description": "A curated selection of my favorite projects—each with its story, challenges, and creative solutions."
+        }
+      }
+    },
+    "experience": {
+      "experience-hero": {
+        "title": "From today to where it all started",
+        "description": "A journey from today’s milestones back to the first sparks that set my path in motion. Each step shaped the skills and passion I bring to my work."
+      },
+      "experience-start": {
+        "title": "Starting point",
+        "curiosity": "It all began with curiosity — taking apart gadgets, tinkering with old computers, and exploring what tech could do.",
+        "school": "In high school, I built my first websites, coded small programs, and saw ideas come to life through code.",
+        "habit": "Those early days taught me to keep learning, experimenting, and starting fresh — a habit that still drives me today."
+      },
+      "experience-timeline": {
+        "overclockr": {
+          "organization": "Overclockr",
+          "title": "CTO & Co-Founder",
+          "location": "Remote",
+          "contents": {
+            "challenge": {
+              "title": "The challenge:",
+              "description": "Overclockr managed multiple projects simultaneously, including web platforms, inventory systems, and native apps. Coordinating development across these varied products while maintaining scalability, reliability, and user experience posed significant challenges."
+            },
+            "solution": {
+              "title": "The solution:",
+              "description": "Full-stack development practices were applied across React/Next.js frontends, NestJS backends, and PostgreSQL databases. Streamlined architecture, reusable components, and cross-platform design patterns ensured consistency and efficiency across all projects."
+            },
+            "learning": {
+              "title": "What was learned:",
+              "description": "This experience reinforced the importance of scalable design, effective project organization, and the ability to adapt solutions to diverse project requirements. It demonstrated how thoughtful architecture and collaboration can produce robust, multi-platform applications."
+            }
+          }
+        },
+        "frontend": {
+          "organization": "Infotech Corporation",
+          "title": "Frontend Engineer",
+          "location": "Taipei, Taiwan",
+          "contents": {
+            "core": {
+              "title": "Core - Optimization",
+              "description": "Throughout the development lifecycle, our collective experiences drove us to enhance the deployment system. We automated everything—from end-to-end testing and component testing to containerization. Similarly, during the deployment phase, I acquired proficiency in continuous integration and continuous deployment using GitLab's native tools."
+            },
+            "development": {
+              "title": "Web application - Development",
+              "description": "As a contributor to the company's new project, I actively participated in all phases of application development. From collaborating with software architects, UI/UX design to meticulously overseeing quality assurance, I worked closely with each production team member. This hands-on involvement provided invaluable insights into the entire development lifecycle."
+            }
+          }
+        },
+        "deep-learning": {
+          "organization": "Ming Chuan University",
+          "title": "Deep learning technology for object detection in libraries",
+          "location": "Taoyuan, Taiwan",
+          "contents": "In our final university project, my team and I delved deep into neural networks and computer vision technology. Our mission? To create an automated software solution for efficient library management. From accurately counting students in the library to detecting prohibited items, our system lightened the load for library staff. Managers gained better control over resource allocation, ensuring optimal staffing levels. Our vision was simple: empower libraries with smart technology."
+        }
+      }
+    },
+    "about": {
+      "about-hero": {
+        "alt": "Profile picture of Andy",
+        "greeting": "Hi, I'm Andy!",
+        "title": "Full-stack developer passionate about building things that matter."
+      },
+      "about-journey": {
+        "title": "My journey",
+        "contents": {
+          "0": "I’ve been building and tinkering with ideas since high school—turning curiosity into websites, apps, and cloud-powered tools. I love creating things that feel smooth, work reliably, and make people’s lives a little easier.",
+          "1": "Whether it’s a sleek interface or a system running quietly in the background, I enjoy finding the right balance between design and function. My multicultural background helps me see problems from different angles and connect easily with others.",
+          "2": "Away from the screen, I’m drawn to organized spaces, fresh air, and the hum of airports. Aviation has always inspired me—there’s something about the mix of engineering and adventure that fuels my creativity."
+        }
+      },
+      "about-skill": {
+        "title": "What I do",
+        "description": "I craft digital experiences from concept to deployment, blending intuitive design with scalable technology. Whether it’s building a pixel-perfect interface or architecting complex systems, my goal is always the same: deliver solutions that work beautifully and perform flawlessly.",
+        "contents": {
+          "frontend": "Frontend",
+          "backend": "Backend",
+          "devops": "DevOps",
+          "database": "Database",
+          "other": "Other"
+        }
+      },
+      "about-workflow": {
+        "title": "How I work",
+        "contents": {
+          "0": {
+            "title": "Clean Code, Clean Mind",
+            "description": "I believe code should be as easy to read as it is to run. This means consistent structure, meaningful naming, and thoughtful organization—making it easier to maintain, scale, and collaborate on."
+          },
+          "1": {
+            "title": "User-First Approach",
+            "description": "Technology only matters if it solves a real problem. I start by understanding the needs, behaviors, and expectations of the people using the product, ensuring the final solution feels natural and intuitive."
+          },
+          "2": {
+            "title": "Scalable by Design",
+            "description": "I design systems with tomorrow in mind. Whether it’s database structure, API architecture, or cloud deployment, I ensure solutions can grow without sacrificing performance."
+          },
+          "3": {
+            "title": "Iterate and Improve",
+            "description": "No first version is ever the final one. I work in cycles—design, test, get feedback, and refine—so the end result is polished and truly meets its goals."
+          },
+          "4": {
+            "title": "Clear and Open Communication",
+            "description": "Whether I’m working solo or collaborating with others, I keep communication transparent. This helps prevent misunderstandings and keeps projects moving forward smoothly."
+          }
+        }
+      }
+    },
+    "showcase": {
+      "showcase-hero": {
+        "title": "Discover the work I've done",
+        "description": "Dive in and see where curiosity, creativity, and code meet — each project is a small adventure."
+      },
+      "showcase-certificate": {
+        "title": "Certificates",
+        "view": "View",
+        "contents": {
+          "0": {
+            "title": "AWS Cloud Practitioner",
+            "description": "The AWS Certified Cloud Practitioner validates foundational, high-level understanding of AWS Cloud, services, and terminology. This is a good starting point on the AWS Certification journey for individuals with no prior IT or cloud experience switching to a cloud career or for line-of-business employees looking for foundational cloud literacy."
+          },
+          "1": {
+            "title": "Excellence in Research Project",
+            "description": "This prestigious award is presented personally by the Dean of the Department of Computer Science and Information Engineering to recognize the five project groups with the best performance in the department."
+          },
+          "2": {
+            "title": "Jury Favorite Research Project",
+            "description": "Invited by MingChuan university, some IT professionals anonymously participated in our final project exhibition. They had to judge our work, based on the presentation we gave and the product we shown during the event."
+          }
+        }
+      },
+      "showcase-project": {
+        "title": "Projects",
+        "contents": {
+          "0": {
+            "title": "Deep learning technology for object detection in libraries",
+            "description": "A deep dive into image recognition and object detection, this project combined dataset preparation, model training, and real-time inference optimization to transform raw visuals into actionable insights. It was as much about building accurate AI models as it was about making results clear, efficient, and usable."
+          }
+        }
+      },
+      "deep-learning": {
+        "deep-learning-hero": {
+          "title": "Deep learning technology for object detection in libraries",
+          "alt": "Screenshot of the project",
+          "contents": {
+            "role": {
+              "title": "Role I played as",
+              "contents": {
+                "0": "Researcher",
+                "1": "Developer",
+                "2": "UI/UX Designer"
+              }
+            },
+            "tool": {
+              "title": "Tools I used",
+              "contents": {
+                "0": "Anaconda",
+                "1": "Google Colab",
+                "2": "Visual Studio Code"
+              }
+            },
+            "duration": {
+              "title": "Project duration",
+              "contents": "1 year and 6 months"
+            },
+            "platform": {
+              "title": "Platforms",
+              "contents": {
+                "0": "Windows",
+                "1": "MacOS",
+                "2": "Linux"
+              }
+            }
+          }
+        },
+        "deep-learning-context": {
+          "title": "Project context",
+          "contents": {
+            "0": {
+              "title": "World pandemic",
+              "description": "The onset of the global pandemic in early 2020 radically transformed daily life, ushering in a wave of unprecedented restrictions. Governments worldwide imposed strict lockdowns, mandating stay-at-home orders and shuttering businesses deemed non-essential. Social gatherings were banned, and travel came to a virtual standstill as borders closed and flights were grounded. Schools and universities shifted to online learning, disrupting traditional education models. Mask mandates became ubiquitous, altering social interactions and public behavior. These measures aimed to curb the spread of the virus but also brought about significant disruptions to social, economic, and cultural norms."
+            },
+            "1": {
+              "title": "The problem",
+              "description": "In the context of health restrictions, many libraries implemented measures limiting the number of simultaneous visitors. Readers were often required to book a time slot in advance to access the facilities. Once inside, libraries implemented social distancing protocols, limiting the number of people in each section, and encouraging the wearing of face masks. These measures aimed to ensure the safety of visitors while allowing limited access to library resources and services."
+            },
+            "2": {
+              "title": "The solution",
+              "description": "Based on the background, this project aims to develop a system that combines object recognition and visitor counting, and apply it to the library of Ming Chuan University's Taoyuan campus. From object recognition and real-time counting of visitors, to also detecting prohibited items and violations of internal rules. The counted visitor data is then analyzed to assist librarians in understanding the current situation within the library."
+            }
+          }
+        },
+        "deep-learning-feature": {
+          "title": "Project features",
+          "contents": {
+            "0": "Live footage",
+            "1": "Visitor count",
+            "2": "Detect and alert suspicious activity",
+            "3": "View previous statistics",
+            "4": "Export statistics with CSV"
+          }
+        },
+        "deep-learning-timeline": {
+          "title": "Project timeline",
+          "contents": {
+            "research": {
+              "title": "Research",
+              "duration": "1 year",
+              "contents": {
+                "0": "Audit",
+                "1": "Stack confirmation",
+                "2": "Technology discovery and learning",
+                "3": "Project intake and alignment"
+              }
+            },
+            "design": {
+              "title": "Design",
+              "duration": "3 months",
+              "contents": {
+                "0": "User interface",
+                "1": "System architecture"
+              }
+            },
+            "development": {
+              "title": "Development",
+              "duration": "3 months",
+              "contents": {
+                "0": "Application"
+              }
+            }
+          }
+        },
+        "deep-learning-architecture": {
+          "title": "Project architecture",
+          "camera": {
+            "title": "Camera recording"
+          },
+          "detection": {
+            "title": "Object detection using YOLOv4 algorithm",
+            "contents": {
+              "0": "Collect basic features",
+              "1": "Collect feature maps on different layer",
+              "2": "Predict object type and coordinate",
+              "3": "Filter and validate results"
+            }
+          },
+          "tracking": {
+            "title": "Tracking object using DeepSORT algorithm",
+            "contents": {
+              "0": "Predict futur coordinate using Kalman filter",
+              "1": "Relation between predictions and results",
+              "1-0": "Mahalanobis distance",
+              "1-1": "Appearance descriptor",
+              "2": "Filter and validate result using Hungarian algorithm"
+            }
+          },
+          "process": {
+            "title": "Results logical process and save",
+            "contents": {
+              "0": "Visitor count statistics",
+              "1": "Visitor illegal behavior capture",
+              "2": "Data export"
+            }
+          }
+        },
+        "deep-learning-result": {
+          "title": "Project results",
+          "contents": {
+            "0": {
+              "title": "Live footage",
+              "contents": {
+                "0": "Dashboard most requested feature.",
+                "1": "Based on the footage content, people, masks and illegal objects can be identified in real time and outlined in green if allowed and red if it is not.",
+                "2": "Once an illegal object is detected, the following alert sound is triggered."
+              }
+            },
+            "1": {
+              "title": "Dashboard features",
+              "contents": {
+                "0": "More feature on the dashboard.",
+                "1": "Shows daily statistics with total number of entry today and the number of people in the library.",
+                "2": "Contains the list of screenshot took when detecting illegal object."
+              }
+            },
+            "2": {
+              "title": "Statistic features",
+              "contents": {
+                "0": "Developed for the administrators in order to predict futur visitor activities using previous statistics.",
+                "1": "Select date (single or range).",
+                "2": "Control results with 3 buttons (refresh chart, switch chart format and export with CSV format)."
+              }
+            },
+            "3": {
+              "title": "Setting page",
+              "contents": {
+                "0": "Customize features for current need.",
+                "1": "Enable or disable detections of selected object.",
+                "2": "Change the volume of alert sound when suspicious activity is detected."
+              }
+            },
+            "4": {
+              "title": "Export statistics with CSV}"
+            }
+          }
+        }
+      }
+    }
+  },
+  "pages": {
+    "home": {
+      "metadata": {
+        "title": "Andy",
+        "description": "Explore the journey of Andy, a full-stack developer passionate about building innovative projects in web development, cloud, and AI. From milestones to early sparks, discover the story behind the work.",
+        "keywords": "andy, portfolio, full stack developer, web developer, software engineer, projects showcase, developer journey, cloud, AI"
+      }
+    },
+    "about": {
+      "metadata": {
+        "title": "About me | Andy",
+        "description": "Learn more about Andy: the story, values, and approach to technology. From creative problem-solving to multilingual communication, discover the person behind the code.",
+        "keywords": "about andy, full stack developer bio, software engineer profile, developer introduction, personal portfolio"
+      }
+    },
+    "experience": {
+      "metadata": {
+        "title": "Experience | Andy",
+        "description": "A chronological journey through professional experiences, from recent achievements to the earliest sparks that shaped a passion for technology and software development.",
+        "keywords": "developer experience, andy work history, professional journey, career timeline, software projects, milestones"
+      }
+    },
+    "showcase": {
+      "metadata": {
+        "title": "Showcase | Andy",
+        "description": "Explore a curated gallery of certificates and projects by Andy. From web apps to cloud solutions, each project reflects creativity, exploration, and technical depth.",
+        "keywords": "certification showcase, project showcase, andy portfolio projects, web apps, cloud projects, developer gallery, creative coding"
+      },
+      "deep-learning": {
+        "metadata": {
+          "title": "Deep Learning Project | Andy",
+          "description": "A deep dive into a computer vision project by Andy, highlighting how machine learning and AI can be applied to solve complex problems and push technology further.",
+          "keywords": "deep learning project, computer vision, AI showcase, machine learning, neural networks, andy projects"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,384 @@
+{
+  "components": {
+    "resume-download": "Télécharger mon CV",
+    "theme-switcher": {
+      "toggle": "Changer le thème",
+      "light": "Clair",
+      "dark": "Sombre",
+      "system": "Système"
+    },
+    "header": {
+      "header-navigation": {
+        "about": "À propos",
+        "experience": "Expérience",
+        "showcase": "Galerie"
+      }
+    },
+    "home": {
+      "home-hero": {
+        "greeting": "Salut, je suis Andy !",
+        "title": "Développeur full‑stack avec une solide base en conception et développement de systèmes. Apprentissage rapide, adaptable aux environnements au rythme soutenu.",
+        "scroll": "Faites défiler"
+      },
+      "home-navigation": {
+        "title": "Découvrez mon parcours",
+        "about": {
+          "title": "À propos de moi",
+          "quote": "La personne derrière le code",
+          "description": "Découvrez mon parcours, mes passions et ce qui me pousse à créer. Un aperçu rapide des valeurs et des expériences qui façonnent mon travail."
+        },
+        "experience": {
+          "title": "Mes expériences",
+          "quote": "Leçons du terrain",
+          "description": "Des projets de lycée aux défis professionnels, explorez les étapes clés, les compétences et les enseignements que j’ai acquis en chemin."
+        },
+        "showcase": {
+          "title": "Galerie",
+          "quote": "Des idées rendues concrètes",
+          "description": "Une sélection soignée de mes certificats et de mes projets préférés — chacun avec son histoire, ses défis et ses solutions créatives."
+        }
+      }
+    },
+    "experience": {
+      "experience-hero": {
+        "title": "D’aujourd’hui jusqu’aux débuts",
+        "description": "Un voyage des jalons d’aujourd’hui jusqu’aux premières étincelles qui ont lancé mon parcours. Chaque étape a forgé les compétences et la passion que j’apporte à mon travail."
+      },
+      "experience-start": {
+        "title": "Point de départ",
+        "curiosity": "Tout a commencé par la curiosité — démonter des gadgets, bidouiller de vieux ordinateurs et explorer le potentiel de la tech.",
+        "school": "Au lycée, j’ai créé mes premiers sites web, codé de petits programmes et vu des idées prendre vie grâce au code.",
+        "habit": "Ces débuts m’ont appris à toujours apprendre, expérimenter et repartir de zéro — une habitude qui me guide encore aujourd’hui."
+      },
+      "experience-timeline": {
+        "overclockr": {
+          "organization": "Overclockr",
+          "title": "CTO & Co‑fondateur",
+          "location": "À distance",
+          "contents": {
+            "challenge": {
+              "title": "Le défi :",
+              "description": "Overclockr gérait plusieurs projets en parallèle, incluant des plateformes web, des systèmes d’inventaire et des applications natives. Coordonner le développement de ces produits variés tout en maintenant scalabilité, fiabilité et expérience utilisateur a posé des défis importants."
+            },
+            "solution": {
+              "title": "La solution :",
+              "description": "Des pratiques full‑stack ont été appliquées sur des frontends React/Next.js, des backends NestJS et des bases PostgreSQL. Une architecture rationalisée, des composants réutilisables et des patrons de conception multiplateformes ont assuré cohérence et efficacité sur l’ensemble des projets."
+            },
+            "learning": {
+              "title": "Ce qui a été appris :",
+              "description": "Cette expérience a renforcé l’importance d’une conception scalable, d’une organisation de projet efficace et de l’adaptabilité des solutions à des exigences diverses. Elle a montré comment une architecture réfléchie et la collaboration peuvent produire des applications robustes et multiplateformes."
+            }
+          }
+        },
+        "frontend": {
+          "organization": "Infotech Corporation",
+          "title": "Ingénieur Frontend",
+          "location": "Taipei, Taïwan",
+          "contents": {
+            "core": {
+              "title": "Core - Optimisation",
+              "description": "Tout au long du cycle de développement, nos expériences nous ont poussés à améliorer le système de déploiement. Nous avons tout automatisé — des tests de bout en bout et tests de composants à la conteneurisation. De même, pendant la phase de déploiement, j’ai acquis de la maîtrise en intégration et déploiement continus avec les outils natifs de GitLab."
+            },
+            "development": {
+              "title": "Application web - Développement",
+              "description": "En tant que contributeur au nouveau projet de l’entreprise, j’ai participé activement à toutes les phases du développement de l’application. De la collaboration avec les architectes logiciels et le design UI/UX jusqu’au suivi rigoureux de l’assurance qualité, j’ai travaillé au plus près de chaque membre de l’équipe. Cette immersion m’a apporté des enseignements précieux sur tout le cycle de développement."
+            }
+          }
+        },
+        "deep-learning": {
+          "organization": "Ming Chuan University",
+          "title": "Technologie de deep learning pour la détection d’objets en bibliothèque",
+          "location": "Taoyuan, Taïwan",
+          "contents": "Pour notre projet de fin d’études, mon équipe et moi avons exploré en profondeur les réseaux neuronaux et la vision par ordinateur. Notre mission ? Créer une solution logicielle automatisée pour une gestion efficace des bibliothèques. Du comptage précis des étudiants à la détection d’objets interdits, notre système a allégé la charge du personnel. Les responsables ont gagné un meilleur contrôle de l’allocation des ressources, garantissant des effectifs optimaux. Notre vision était simple : donner du pouvoir aux bibliothèques grâce à la technologie."
+        }
+      }
+    },
+    "about": {
+      "about-hero": {
+        "alt": "Photo de profil d’Andy",
+        "greeting": "Salut, je suis Andy !",
+        "title": "Développeur full‑stack passionné par la création de choses qui comptent."
+      },
+      "about-journey": {
+        "title": "Mon parcours",
+        "contents": {
+          "0": "Je construis et j’expérimente des idées depuis le lycée — transformant la curiosité en sites web, applications et outils propulsés par le cloud. J’aime créer des choses fluides, fiables et utiles au quotidien.",
+          "1": "Qu’il s’agisse d’une interface élégante ou d’un système qui tourne discrètement en arrière‑plan, j’aime trouver le juste équilibre entre design et fonction. Mon bagage multiculturel m’aide à voir les problèmes sous différents angles et à me connecter facilement aux autres.",
+          "2": "Loin de l’écran, j’aime les espaces organisés, l’air frais et le bourdonnement des aéroports. L’aviation m’inspire depuis toujours — ce mélange d’ingénierie et d’aventure alimente ma créativité."
+        }
+      },
+      "about-skill": {
+        "title": "Ce que je fais",
+        "description": "Je conçois des expériences numériques de l’idée au déploiement, en mariant design intuitif et technologie scalable. Qu’il s’agisse d’un pixel‑perfect ou de l’architecture de systèmes complexes, mon objectif reste le même : livrer des solutions belles et performantes.",
+        "contents": {
+          "frontend": "Frontend",
+          "backend": "Backend",
+          "devops": "DevOps",
+          "database": "Base de données",
+          "other": "Autre"
+        }
+      },
+      "about-workflow": {
+        "title": "Ma façon de travailler",
+        "contents": {
+          "0": {
+            "title": "Code propre, esprit clair",
+            "description": "Je pense que le code doit être aussi simple à lire qu’à exécuter. Cela implique une structure cohérente, des noms parlants et une organisation réfléchie — pour faciliter maintenance, montée en charge et collaboration."
+          },
+          "1": {
+            "title": "L’utilisateur d’abord",
+            "description": "La technologie n’a de valeur que si elle résout un vrai problème. Je commence par comprendre les besoins, les comportements et les attentes des utilisateurs afin que la solution finale paraisse naturelle et intuitive."
+          },
+          "2": {
+            "title": "Scalable par conception",
+            "description": "Je conçois des systèmes en pensant à demain. Qu’il s’agisse de structure de base de données, d’architecture d’API ou de déploiement cloud, j’assure une croissance sans sacrifier la performance."
+          },
+          "3": {
+            "title": "Itérer et améliorer",
+            "description": "Aucune première version n’est définitive. Je travaille par cycles — concevoir, tester, recueillir des retours et affiner — afin que le résultat soit abouti et réponde vraiment à ses objectifs."
+          },
+          "4": {
+            "title": "Communication claire et ouverte",
+            "description": "Que je travaille seul ou en équipe, je garde une communication transparente. Cela évite les malentendus et maintient les projets sur de bons rails."
+          }
+        }
+      }
+    },
+    "showcase": {
+      "showcase-hero": {
+        "title": "Découvrez les certificats que j’ai obtenu et les projets que j’ai réalisés",
+        "description": "Plongez et voyez où curiosité, créativité et code se rencontrent — chaque projet est une petite aventure."
+      },
+      "showcase-certificate": {
+        "title": "Certificats",
+        "view": "Voir",
+        "contents": {
+          "0": {
+            "title": "AWS Cloud Practitioner",
+            "description": "La certification AWS Certified Cloud Practitioner valide une compréhension fondamentale et globale du cloud AWS, de ses services et de sa terminologie. C’est un bon point de départ dans le parcours de certification AWS pour les personnes sans expérience préalable en informatique ou en cloud, en reconversion, ou pour les profils métier recherchant une culture cloud de base."
+          },
+          "1": {
+            "title": "Excellence en projet de recherche",
+            "description": "Cette prestigieuse distinction est remise personnellement par le doyen du département d’informatique et d’ingénierie de l’information pour récompenser les cinq groupes de projet ayant obtenu les meilleurs résultats du département."
+          },
+          "2": {
+            "title": "Projet de recherche préféré du jury",
+            "description": "Invitée par l’université Ming Chuan, une partie de professionnels IT a participé anonymement à notre exposition de projets de fin d’études. Ils devaient évaluer notre travail sur la base de la présentation donnée et du produit montré lors de l’événement."
+          }
+        }
+      },
+      "showcase-project": {
+        "title": "Projets",
+        "contents": {
+          "0": {
+            "title": "Technologie de deep learning pour la détection d’objets en bibliothèque",
+            "description": "Exploration approfondie de la reconnaissance d’images et de la détection d’objets, ce projet a combiné préparation de jeux de données, entraînement de modèles et optimisation de l’inférence en temps réel pour transformer des visuels bruts en informations exploitables. Il s’agissait autant de construire des modèles IA précis que de rendre les résultats clairs, efficaces et utilisables."
+          }
+        }
+      },
+      "deep-learning": {
+        "deep-learning-hero": {
+          "title": "Technologie de deep learning pour la détection d’objets en bibliothèque",
+          "alt": "Capture d’écran du projet",
+          "contents": {
+            "role": {
+              "title": "Rôles tenus",
+              "contents": {
+                "0": "Chercheur",
+                "1": "Développeur",
+                "2": "Designer UI/UX"
+              }
+            },
+            "tool": {
+              "title": "Outils utilisés",
+              "contents": {
+                "0": "Anaconda",
+                "1": "Google Colab",
+                "2": "Visual Studio Code"
+              }
+            },
+            "duration": {
+              "title": "Durée du projet",
+              "contents": "1 an et 6 mois"
+            },
+            "platform": {
+              "title": "Plateformes",
+              "contents": {
+                "0": "Windows",
+                "1": "MacOS",
+                "2": "Linux"
+              }
+            }
+          }
+        },
+        "deep-learning-context": {
+          "title": "Contexte du projet",
+          "contents": {
+            "0": {
+              "title": "Pandémie mondiale",
+              "description": "Le début de la pandémie mondiale début 2020 a profondément transformé la vie quotidienne, entraînant une vague de restrictions inédites. Les gouvernements du monde entier ont imposé des confinements stricts, ordonnant de rester chez soi et fermant les entreprises jugées non essentielles. Les rassemblements sociaux ont été interdits et les voyages quasi à l’arrêt avec la fermeture des frontières et l’immobilisation des vols. Écoles et universités sont passées à l’enseignement en ligne, bouleversant les modèles éducatifs traditionnels. Le port du masque s’est généralisé, modifiant interactions sociales et comportements publics. Ces mesures visaient à freiner la propagation du virus mais ont aussi provoqué d’importantes perturbations sociales, économiques et culturelles."
+            },
+            "1": {
+              "title": "Le problème",
+              "description": "Dans le contexte des restrictions sanitaires, de nombreuses bibliothèques ont mis en place des mesures limitant le nombre de visiteurs simultanés. Les lecteurs devaient souvent réserver un créneau à l’avance pour accéder aux lieux. Une fois à l’intérieur, les bibliothèques ont appliqué des protocoles de distanciation sociale, limité le nombre de personnes par section et encouragé le port du masque. Ces mesures visaient à assurer la sécurité des visiteurs tout en permettant un accès limité aux ressources et services."
+            },
+            "2": {
+              "title": "La solution",
+              "description": "Compte tenu de ce contexte, ce projet vise à développer un système combinant reconnaissance d’objets et comptage des visiteurs, et à l’appliquer à la bibliothèque du campus de Taoyuan de l’université Ming Chuan. De la reconnaissance d’objets et du comptage en temps réel des visiteurs, jusqu’à la détection d’objets interdits et des violations des règles internes. Les données de fréquentation sont ensuite analysées pour aider les bibliothécaires à comprendre la situation actuelle dans la bibliothèque."
+            }
+          }
+        },
+        "deep-learning-feature": {
+          "title": "Fonctionnalités du projet",
+          "contents": {
+            "0": "Flux en direct",
+            "1": "Comptage des visiteurs",
+            "2": "Détection et alerte d’activités suspectes",
+            "3": "Consulter les statistiques précédentes",
+            "4": "Exporter les statistiques en CSV"
+          }
+        },
+        "deep-learning-timeline": {
+          "title": "Chronologie du projet",
+          "contents": {
+            "research": {
+              "title": "Recherche",
+              "duration": "1 an",
+              "contents": {
+                "0": "Audit",
+                "1": "Validation du stack",
+                "2": "Découverte des technologies et apprentissage",
+                "3": "Cadrage et alignement du projet"
+              }
+            },
+            "design": {
+              "title": "Conception",
+              "duration": "3 mois",
+              "contents": {
+                "0": "Interface utilisateur",
+                "1": "Architecture système"
+              }
+            },
+            "development": {
+              "title": "Développement",
+              "duration": "3 mois",
+              "contents": {
+                "0": "Application"
+              }
+            }
+          }
+        },
+        "deep-learning-architecture": {
+          "title": "Architecture du projet",
+          "camera": {
+            "title": "Enregistrement caméra"
+          },
+          "detection": {
+            "title": "Détection d’objets avec l’algorithme YOLOv4",
+            "contents": {
+              "0": "Collecte des caractéristiques de base",
+              "1": "Collecte des cartes de caractéristiques à différents niveaux",
+              "2": "Prédire le type d’objet et ses coordonnées",
+              "3": "Filtrer et valider les résultats"
+            }
+          },
+          "tracking": {
+            "title": "Suivi d’objet avec l’algorithme DeepSORT",
+            "contents": {
+              "0": "Prédire les futures coordonnées avec le filtre de Kalman",
+              "1": "Association entre prédictions et résultats",
+              "1-0": "Distance de Mahalanobis",
+              "1-1": "Descripteur d’apparence",
+              "2": "Filtrer et valider les résultats avec l’algorithme hongrois"
+            }
+          },
+          "process": {
+            "title": "Traitement logique des résultats et sauvegarde",
+            "contents": {
+              "0": "Statistiques de fréquentation",
+              "1": "Capture des comportements interdits des visiteurs",
+              "2": "Export des données"
+            }
+          }
+        },
+        "deep-learning-result": {
+          "title": "Résultats du projet",
+          "contents": {
+            "0": {
+              "title": "Flux en direct",
+              "contents": {
+                "0": "Fonctionnalité la plus demandée du tableau de bord.",
+                "1": "Selon le contenu du flux, les personnes, masques et objets interdits sont identifiés en temps réel et encadrés en vert s’ils sont autorisés et en rouge s’ils ne le sont pas.",
+                "2": "Lorsqu’un objet interdit est détecté, l’alerte sonore suivante est déclenchée."
+              }
+            },
+            "1": {
+              "title": "Fonctionnalités du tableau de bord",
+              "contents": {
+                "0": "Davantage de fonctionnalités sur le tableau de bord.",
+                "1": "Affiche les statistiques quotidiennes avec le total des entrées du jour et le nombre de personnes présentes dans la bibliothèque.",
+                "2": "Contient la liste des captures d’écran prises lors de la détection d’objets interdits."
+              }
+            },
+            "2": {
+              "title": "Fonctionnalités statistiques",
+              "contents": {
+                "0": "Développé pour les administrateurs afin de prédire la fréquentation future grâce aux statistiques passées.",
+                "1": "Sélectionner une date (unique ou plage).",
+                "2": "Contrôler les résultats avec 3 boutons (rafraîchir le graphique, changer le type de graphique et exporter au format CSV)."
+              }
+            },
+            "3": {
+              "title": "Page des paramètres",
+              "contents": {
+                "0": "Personnaliser les fonctionnalités selon le besoin du moment.",
+                "1": "Activer ou désactiver la détection des objets sélectionnés.",
+                "2": "Modifier le volume de l’alerte sonore lors de la détection d’activités suspectes."
+              }
+            },
+            "4": {
+              "title": "Exporter les statistiques en CSV"
+            }
+          }
+        }
+      }
+    }
+  },
+  "pages": {
+    "home": {
+      "metadata": {
+        "title": "Andy",
+        "description": "Explorez le parcours d’Andy, développeur full‑stack passionné par la création de projets innovants en développement web, cloud et IA. Des jalons aux premières étincelles, découvrez l’histoire derrière le travail.",
+        "keywords": "andy, portfolio, développeur full stack, développeur web, ingénieur logiciel, galerie de projets, parcours développeur, cloud, IA"
+      }
+    },
+    "about": {
+      "metadata": {
+        "title": "À propos de moi | Andy",
+        "description": "En savoir plus sur Andy : son histoire, ses valeurs et son approche de la technologie. De la résolution créative de problèmes à la communication multilingue, découvrez la personne derrière le code.",
+        "keywords": "à propos d’andy, bio développeur full stack, profil ingénieur logiciel, présentation développeur, portfolio personnel"
+      }
+    },
+    "experience": {
+      "metadata": {
+        "title": "Expérience | Andy",
+        "description": "Un parcours chronologique des expériences professionnelles, des réalisations récentes aux premières étincelles qui ont façonné une passion pour la technologie et le développement logiciel.",
+        "keywords": "expérience développeur, parcours d’andy, parcours professionnel, frise de carrière, projets logiciels, jalons"
+      }
+    },
+    "showcase": {
+      "metadata": {
+        "title": "Galerie | Andy",
+        "description": "Explorez une galerie soignée de certificats et de projets d’Andy. Des applications web aux solutions cloud, chaque projet reflète créativité, exploration et profondeur technique.",
+        "keywords": "galerie de certifications, galerie de projets, projets du portfolio d’andy, applications web, projets cloud, galerie développeur, code créatif"
+      },
+      "deep-learning": {
+        "metadata": {
+          "title": "Projet Deep Learning | Andy",
+          "description": "Exploration approfondie d’un projet de vision par ordinateur réalisé par Andy, mettant en lumière l’application de l’IA et du machine learning pour résoudre des problèmes complexes et faire avancer la technologie.",
+          "keywords": "projet deep learning, vision par ordinateur, galerie IA, machine learning, réseaux neuronaux, projets andy"
+        }
+      }
+    }
+  }
+}
