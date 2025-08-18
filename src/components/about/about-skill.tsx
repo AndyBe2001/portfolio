@@ -82,13 +82,8 @@ export const AboutSkill = async () => {
   return (
     <section
       className={
-        "relative grid place-items-center overflow-y-clip lg:grid-cols-2"
+        "bg-primary/10 border-border relative grid place-items-center overflow-hidden overflow-y-clip rounded-xl border p-10 lg:grid-cols-2"
       }>
-      <div
-        className={
-          "bg-foreground/5 absolute top-0 left-1/2 h-full w-dvw -translate-x-1/2"
-        }
-      />
       <article>
         <ScrollFloat containerClassName="mt-16 lg:mt-0 mb-4">
           {translation("title")}
@@ -97,7 +92,7 @@ export const AboutSkill = async () => {
           {translation("description")}
         </ScrollReveal>
       </article>
-      <article className={"relative h-84 w-full md:h-112 lg:flex-1"}>
+      <article className={"relative h-60 w-full md:h-112 lg:flex-1"}>
         <CardSwap verticalDistance={52}>
           {skills.map(cat => (
             <CardSwapItem key={cat.key}>

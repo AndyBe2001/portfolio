@@ -32,7 +32,7 @@ export const DeepLearningHero = async () => {
     <section className="space-y-20">
       <article className={"mx-auto w-full max-w-3xl space-y-10"}>
         <SplitText
-          className={"overflow-visible text-4xl font-bold"}
+          className={"w-full overflow-visible text-4xl font-bold"}
           as={"h1"}
           textAlign={"center"}
           splitType={"words"}>
