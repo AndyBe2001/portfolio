@@ -1,5 +1,19 @@
 {
   "components": {
+    "resume-download": "Download CV",
+    "theme-switcher": {
+      "toggle": "Toggle theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "header": {
+      "header-navigation": {
+        "about": "About",
+        "experience": "Experience",
+        "showcase": "Showcase"
+      }
+    },
     "home": {
       "home-hero": {
         "greeting": "Hi, I'm Andy!",
@@ -135,7 +149,26 @@
         "title": "Discover the work I've done",
         "description": "Dive in and see where curiosity, creativity, and code meet — each project is a small adventure."
       },
+      "showcase-certificate": {
+        "title": "Certificates",
+        "view": "View",
+        "contents": {
+          "0": {
+            "title": "AWS Cloud Practitioner",
+            "description": "The AWS Certified Cloud Practitioner validates foundational, high-level understanding of AWS Cloud, services, and terminology. This is a good starting point on the AWS Certification journey for individuals with no prior IT or cloud experience switching to a cloud career or for line-of-business employees looking for foundational cloud literacy."
+          },
+          "1": {
+            "title": "Excellence in Research Project",
+            "description": "This prestigious award is presented personally by the Dean of the Department of Computer Science and Information Engineering to recognize the five project groups with the best performance in the department."
+          },
+          "2": {
+            "title": "Jury Favorite Research Project",
+            "description": "Invited by MingChuan university, some IT professionals anonymously participated in our final project exhibition. They had to judge our work, based on the presentation we gave and the product we shown during the event."
+          }
+        }
+      },
       "showcase-project": {
+        "title": "Projects",
         "contents": {
           "0": {
             "title": "Deep learning technology for object detection in libraries",
@@ -311,5 +344,41 @@
       }
     }
   },
-  "pages": {}
+  "pages": {
+    "home": {
+      "metadata": {
+        "title": "Andy",
+        "description": "Explore the journey of Andy, a full-stack developer passionate about building innovative projects in web development, cloud, and AI. From milestones to early sparks, discover the story behind the work.",
+        "keywords": "andy, portfolio, full stack developer, web developer, software engineer, projects showcase, developer journey, cloud, AI"
+      }
+    },
+    "about": {
+      "metadata": {
+        "title": "About me | Andy",
+        "description": "Learn more about Andy: the story, values, and approach to technology. From creative problem-solving to multilingual communication, discover the person behind the code.",
+        "keywords": "about andy, full stack developer bio, software engineer profile, developer introduction, personal portfolio"
+      }
+    },
+    "experience": {
+      "metadata": {
+        "title": "Experience | Andy",
+        "description": "A chronological journey through professional experiences, from recent achievements to the earliest sparks that shaped a passion for technology and software development.",
+        "keywords": "developer experience, andy work history, professional journey, career timeline, software projects, milestones"
+      }
+    },
+    "showcase": {
+      "metadata": {
+        "title": "Showcase | Andy",
+        "description": "Explore a curated gallery of certificates and projects by Andy. From web apps to cloud solutions, each project reflects creativity, exploration, and technical depth.",
+        "keywords": "certification showcase, project showcase, andy portfolio projects, web apps, cloud projects, developer gallery, creative coding"
+      },
+      "deep-learning": {
+        "metadata": {
+          "title": "Deep Learning Project | Andy",
+          "description": "A deep dive into a computer vision project by Andy, highlighting how machine learning and AI can be applied to solve complex problems and push technology further.",
+          "keywords": "deep learning project, computer vision, AI showcase, machine learning, neural networks, andy projects"
+        }
+      }
+    }
+  }
 }

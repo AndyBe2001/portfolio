@@ -1,6 +1,6 @@
 "use client";
 
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useCallback } from "react";
 
 import { Button } from "@/ui/button";
@@ -15,6 +15,7 @@ const RESUME_URL: Record<string, string> = {
     "https://qj1affpgixr8zsed.public.blob.vercel-storage.com/CV_ZH-TW.pdf",
 };
 export const ResumeDownload = () => {
+  const translation = useTranslations("components");
   const locale = useLocale();
 
   const handleDownload = useCallback(async () => {
@@ -42,7 +43,7 @@ export const ResumeDownload = () => {
 
   return (
     <Button onClick={handleDownload}>
-      <ShinyText>Download CV</ShinyText>
+      <ShinyText>{translation("resume-download")}</ShinyText>
     </Button>
   );
 };

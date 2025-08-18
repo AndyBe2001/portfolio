@@ -1,30 +1,36 @@
+import { getTranslations } from "next-intl/server";
+
 import { ResumeDownload } from "@/components/resume-download";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 import { Link } from "@/i18n/navigation";
 
 export default async function DefaultHeader() {
+  const translation = await getTranslations(
+    "components.header.header-navigation"
+  );
+
   return (
-    <header className="top-0 w-full h-16 bg-background z-20 sticky border-b transition-colors">
+    <header className="bg-background sticky top-0 z-20 h-16 w-full border-b transition-colors">
       <div
         className={
-          "mx-auto max-w-7xl px-5 flex justify-between items-center h-full"
+          "mx-auto flex h-full max-w-7xl items-center justify-between px-5"
         }>
-        <Link href={"/"} className={"font-semibold text-xl z-10"}>
+        <Link href={"/"} className={"z-10 text-xl font-semibold"}>
           Andy
         </Link>
-        <div className={"flex gap-6 items-center z-10"}>
-          <nav className="gap-4 items-center hidden md:flex">
+        <div className={"z-10 flex items-center gap-6"}>
+          <nav className="hidden items-center gap-4 md:flex">
             <Link className="animate-link" href="/about">
-              About
+              {translation("about")}
             </Link>
             <Link className="animate-link" href="/experience">
-              Experience
+              {translation("experience")}
             </Link>
             <Link className="animate-link" href="/showcase">
-              Showcase
+              {translation("showcase")}
             </Link>
           </nav>
-          <div className={"flex gap-2 items-center"}>
+          <div className={"flex items-center gap-2"}>
             <ThemeSwitcher />
             <ResumeDownload />
           </div>

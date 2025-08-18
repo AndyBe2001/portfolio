@@ -3,16 +3,8 @@ import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 
 import { Link } from "@/i18n/navigation";
+import SplitText from "@/ui/split-text";
 
-const items = [
-  {
-    image: "/showcase/deep-learning/banner.webp",
-    title: "Deep learning technology for object detection in libraries",
-    description:
-      "A deep dive into image recognition and object detection, this project combined dataset preparation, model training, and real-time inference optimization to transform raw visuals into actionable insights. It was as much about building accurate AI models as it was about making results clear, efficient, and usable.",
-    url: "/showcase/deep-learning-for-library-surveillance-and-management",
-  },
-];
 const ShowcaseProjectItem = (props: {
   image: string;
   title: string;
@@ -51,7 +43,13 @@ export const ShowcaseProject = async () => {
   );
 
   return (
-    <section>
+    <section className={"space-y-10"}>
+      <SplitText
+        className={"w-full text-2xl font-semibold"}
+        as={"h3"}
+        textAlign={"center"}>
+        {translation("title")}
+      </SplitText>
       <ul className={"mx-auto grid max-w-3xl grid-cols-1 gap-4"}>
         <ShowcaseProjectItem
           image={"/showcase/deep-learning/banner.webp"}
