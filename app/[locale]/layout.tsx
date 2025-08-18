@@ -1,9 +1,10 @@
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { setRequestLocale } from "next-intl/server";
+import Image from "next/image";
 
 import { locales } from "@/configs/i18n";
-import { ThemeProvider } from "@/providers/theme-provider";
+import { Header } from "@/views/header";
 
 export async function generateStaticParams() {
   return locales.map(locale => ({ locale }));
@@ -20,17 +21,16 @@ export default async function IndexLayout({
   setRequestLocale(params.locale);
 
   return (
-    <html lang={params.locale}>
+    <html lang={params.locale} className="grid place-items-center">
       <head>
         <meta
           name="google-site-verification"
           content="nGRAZR-CeqSsbmWJnVs3B3zoIQWuENGj2ezVpv8vUU8"
         />
       </head>
-      <body className="dark:bg-dark bg-light text-sm text-gray-900 transition-colors dark:text-white sm:text-base">
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
-        </ThemeProvider>
+      <body className="px-4 w-full max-w-6xl">
+        <Header />
+        {children}
         <Analytics />
         <SpeedInsights />
       </body>
