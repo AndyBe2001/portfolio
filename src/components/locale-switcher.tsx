@@ -45,7 +45,7 @@ export const LocaleSwitcher = () => {
         aria-label={translation("locale-switcher")}>
         <SelectValue />
       </SelectTrigger>
-      <SelectContent align="end">
+      <SelectContent align="center">
         {Object.entries(localeNames).map(([key, value]) => (
           <SelectItem key={key} value={key}>
             <span className={"flex items-center gap-2"}>

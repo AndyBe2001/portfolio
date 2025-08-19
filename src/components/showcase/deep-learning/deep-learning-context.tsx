@@ -12,24 +12,24 @@ const DeepLearningContextItem = ({
   children,
 }: DeepLearningContextItemProps) => {
   return (
-    <article
+    <li
       className={cn(
-        "group peer transition-flex relative py-5 duration-300 lg:h-80",
-        "lg:flex-1/3 lg:p-5 lg:peer-hover:flex-1/5 lg:hover:flex-3/5",
+        "group peer transition-flex relative p-4 duration-300 lg:h-100",
+        "lg:flex-1/3 lg:p-4 lg:peer-hover:flex-1/5 lg:hover:flex-3/5",
         "xl:flex-1/3 xl:p-10 xl:peer-hover:flex-1/6 xl:hover:flex-2/3"
       )}>
       <div className={"grid h-full grid-cols-1"}>
         <div className={"h-10 w-full"}></div>
-        <h3
+        <h4
           className={cn(
             "absolute h-10 text-2xl font-semibold transition-[top_left_translate]",
-            "top-5 left-0 text-center lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2",
-            "lg:group-hover:top-5 lg:group-hover:left-5",
-            "xl:group-hover:top-10 xl:group-hover:left-10",
-            "lg:group-hover:translate-x-0 lg:group-hover:translate-y-0 lg:group-hover:text-left"
+            "top-4 left-4",
+            "lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2",
+            "lg:group-hover:top-4 lg:group-hover:left-1/2 lg:group-hover:-translate-x-1/2 lg:group-hover:translate-y-0",
+            "xl:group-hover:top-10"
           )}>
           {title}
-        </h3>
+        </h4>
         <p
           className={
             "text-muted-foreground transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100"
@@ -37,7 +37,7 @@ const DeepLearningContextItem = ({
           {children}
         </p>
       </div>
-    </article>
+    </li>
   );
 };
 
@@ -48,7 +48,7 @@ export const DeepLearningContext = async () => {
   return (
     <section>
       <h3 className="mb-10 text-center text-4xl">{translation("title")}</h3>
-      <article
+      <ul
         className={
           "border-border bg-card flex flex-col overflow-hidden rounded-xl border max-lg:divide-y lg:flex-row lg:divide-x"
         }>
@@ -59,7 +59,7 @@ export const DeepLearningContext = async () => {
             {translation(`contents.${item}.description`)}
           </DeepLearningContextItem>
         ))}
-      </article>
+      </ul>
     </section>
   );
 };
