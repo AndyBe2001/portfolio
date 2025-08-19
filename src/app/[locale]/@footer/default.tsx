@@ -6,25 +6,27 @@ import { GithubIcon, LinkedinIcon } from "@/ui/icon";
 
 export default async function DefaultFooter() {
   return (
-    <footer className="py-20 space-y-20 border-t">
-      <div className="flex justify-between items-center px-4 w-full mx-auto max-w-7xl">
-        <span className={"font-semibold text-lg"}>Andy</span>
+    <footer className="space-y-20 border-t py-20">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4">
+        <span className={"text-lg font-semibold"}>Andy</span>
         <LocaleSwitcher />
       </div>
-      <div className={"flex justify-center items-center flex-col gap-4"}>
+      <div className={"flex flex-col items-center justify-center gap-4"}>
         <ul className="flex gap-4">
           <li>
-            <Link href="https://www.linkedin.com/in/andybe2001/">
+            <Link
+              href="https://www.linkedin.com/in/andybe2001/"
+              aria-label={"LinkedIn"}>
               <LinkedinIcon fill={"var(--foreground)"} />
             </Link>
           </li>
           <li>
-            <Link href="https://github.com/AndyBe2001">
+            <Link href="https://github.com/AndyBe2001" aria-label={"Github"}>
               <GithubIcon fill={"var(--foreground)"} />
             </Link>
           </li>
           <li>
-            <Link href="mailto:andybe034@gmail.com">
+            <Link href="mailto:andybe034@gmail.com" aria-label={"Mail"}>
               <Mail />
             </Link>
           </li>

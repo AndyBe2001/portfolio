@@ -25,10 +25,10 @@ const NavigationCard = (props: {
 }) => {
   return (
     <Link href={props.href}>
-      <SpotlightCard className={"pt-10 pr-10 pb-20 h-full"}>
+      <SpotlightCard className={"h-full pt-10 pr-10 pb-20"}>
         <props.icon size={42} />
-        <h3 className={"text-2xl font-semibold mt-6"}>{props.title}</h3>
-        <h5 className={"italic text-foreground/60 mt-4"}>{props.quote}</h5>
+        <h3 className={"mt-6 text-2xl font-semibold"}>{props.title}</h3>
+        <p className={"text-foreground/60 mt-4 italic"}>{props.quote}</p>
         <p>{props.description}</p>
       </SpotlightCard>
     </Link>
@@ -41,7 +41,7 @@ export const HomeNavigation = async () => {
   return (
     <section className={"flex flex-col items-center justify-center gap-4"}>
       <ScrollFloat>{translation("title")}</ScrollFloat>
-      <ul className={"grid lg:grid-cols-3 gap-4"}>
+      <ul className={"grid gap-4 lg:grid-cols-3"}>
         {NAVIGATION_ROUTES.map(item => (
           <li key={item.key}>
             <NavigationCard

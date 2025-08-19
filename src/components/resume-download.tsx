@@ -42,7 +42,9 @@ export const ResumeDownload = () => {
   }, [locale]);
 
   return (
-    <Button onClick={handleDownload}>
+    <Button
+      onClick={handleDownload}
+      aria-label={translation("resume-download")}>
       <ShinyText>{translation("resume-download")}</ShinyText>
     </Button>
   );
