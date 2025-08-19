@@ -178,6 +178,7 @@
         }
       },
       "deep-learning": {
+        "deep-learning-sound": "用于检测可疑活动的声音",
         "deep-learning-hero": {
           "title": "用于图书馆目标检测的深度学习技术",
           "alt": "项目截图",

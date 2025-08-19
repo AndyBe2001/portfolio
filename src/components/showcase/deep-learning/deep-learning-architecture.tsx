@@ -73,9 +73,9 @@ export const DeepLearningArchitecture = async () => {
         </ArchitectureItem>
         {/* Yolo v4 */}
         <Architecture>
-          <h3 className="mb-5 w-fit text-center font-semibold">
+          <h4 className="mb-5 w-fit text-center font-semibold">
             {translation("detection.title")}
-          </h3>
+          </h4>
           <div className="grid gap-4 md:grid-cols-4">
             <ArchitectureItem icon={Group}>
               {translation("detection.contents.0")}
@@ -93,9 +93,9 @@ export const DeepLearningArchitecture = async () => {
         </Architecture>
         {/* DeepSORT */}
         <Architecture>
-          <h3 className="mb-5 w-fit text-center font-semibold">
+          <h4 className="mb-5 w-fit text-center font-semibold">
             {translation("tracking.title")}
-          </h3>
+          </h4>
           <div className="grid gap-4 lg:grid-cols-4">
             <ArchitectureItem icon={TrendingUpDown}>
               {translation("tracking.contents.0")}
@@ -119,9 +119,9 @@ export const DeepLearningArchitecture = async () => {
         </Architecture>
         {/* Processing */}
         <Architecture>
-          <h3 className="mb-5 w-fit text-center font-semibold">
+          <h4 className="mb-5 w-fit text-center font-semibold">
             {translation("process.title")}
-          </h3>
+          </h4>
           <div className="grid gap-4 sm:grid-cols-3">
             <ArchitectureItem icon={ChartColumn}>
               {translation("process.contents.0")}

@@ -8,21 +8,22 @@ export const ExperienceHero = async () => {
   );
 
   return (
-    <section className="text-center relative pt-16 pb-80 grid">
+    <section className="relative grid pt-16 pb-80 text-center">
       <SplitText
-        className={"text-4xl font-bold mb-10"}
+        className={"mb-10 text-4xl font-bold"}
         as={"h1"}
         splitType={"words"}>
         {translation("title")}
       </SplitText>
       <SplitText
-        className={"text-lg text-muted-foreground max-w-2xl mx-auto"}
+        className={"text-muted-foreground mx-auto max-w-2xl text-lg"}
+        as={"h2"}
         splitType={"words"}>
         {translation("description")}
       </SplitText>
       <div
         className={
-          "size-10 bg-primary absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 rounded-full"
+          "bg-primary absolute bottom-0 left-1/2 size-10 -translate-x-1/2 translate-y-1/2 rounded-full"
         }
       />
     </section>

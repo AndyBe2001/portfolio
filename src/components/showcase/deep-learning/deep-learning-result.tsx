@@ -18,7 +18,7 @@ export const Result = ({
 }: ResultProps) => {
   return (
     <li className={"bg-primary/10 border-border rounded-2xl border p-4"}>
-      <h5 className="mb-4 text-center text-xl">{title}</h5>
+      <h4 className="mb-4 text-center text-xl">{title}</h4>
       <div className="flex flex-col items-center gap-4 lg:flex-row lg:gap-8">
         <Image
           src={imageSrc}

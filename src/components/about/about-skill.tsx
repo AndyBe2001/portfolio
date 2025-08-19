@@ -96,7 +96,7 @@ export const AboutSkill = async () => {
         <CardSwap verticalDistance={52}>
           {skills.map(cat => (
             <CardSwapItem key={cat.key}>
-              <h3 className="bg-card mb-1 flex items-center gap-2 border-b p-2 font-semibold">
+              <h3 className="mb-1 flex items-center gap-2 border-b border-[#e5e7eb] p-2 font-semibold">
                 <cat.icon size={18} />
                 {translation(`contents.${cat.key}`)}
               </h3>

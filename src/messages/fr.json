@@ -178,6 +178,7 @@
         }
       },
       "deep-learning": {
+        "deep-learning-sound": "Son utilisé pour la détection d’une activité suspecte",
         "deep-learning-hero": {
           "title": "Technologie de deep learning pour la détection d’objets en bibliothèque",
           "alt": "Capture d’écran du projet",

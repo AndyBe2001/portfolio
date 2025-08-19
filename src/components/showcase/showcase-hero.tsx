@@ -7,15 +7,16 @@ export const ShowcaseHero = async () => {
     "components.showcase.showcase-hero"
   );
   return (
-    <section className="text-center py-16 grid">
+    <section className="grid py-16 text-center">
       <SplitText
-        className={"text-4xl font-bold mb-10"}
+        className={"mb-10 text-4xl font-bold"}
         as={"h1"}
         splitType={"words"}>
         {translation("title")}
       </SplitText>
       <SplitText
-        className={"text-lg text-muted-foreground"}
+        className={"text-muted-foreground text-lg"}
+        as={"h2"}
         splitType={"words"}>
         {translation("description")}
       </SplitText>

@@ -36,7 +36,7 @@ const CardSwapItem = forwardRef<HTMLDivElement, CardSwapItemProps>(
     <div
       ref={ref}
       {...rest}
-      className={`border-card-foreground/10 bg-card absolute top-1/2 left-1/2 overflow-hidden rounded-xl border [will-change:transform] [backface-visibility:hidden] [transform-style:preserve-3d] ${customClass ?? ""} ${rest.className ?? ""}`.trim()}
+      className={`absolute top-1/2 left-1/2 overflow-hidden rounded-xl border border-[#e5e7eb] bg-[#ffffff] text-[#09090b] [will-change:transform] [backface-visibility:hidden] [transform-style:preserve-3d] ${customClass ?? ""} ${rest.className ?? ""}`.trim()}
     />
   )
 );

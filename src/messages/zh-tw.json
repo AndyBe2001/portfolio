@@ -178,6 +178,7 @@
         }
       },
       "deep-learning": {
+        "deep-learning-sound": "用於偵測可疑活動的聲音",
         "deep-learning-hero": {
           "title": "用於圖書館物件偵測的深度學習技術",
           "alt": "專案截圖",

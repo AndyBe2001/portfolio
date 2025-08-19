@@ -8,9 +8,9 @@ export const AboutHero = async () => {
   const translation = await getTranslations("components.about.about-hero");
 
   return (
-    <section className="text-center py-16 grid">
+    <section className="grid py-16 text-center">
       <AnimatedContent>
-        <figure className="relative size-50 mx-auto mb-6 rounded-full overflow-hidden">
+        <figure className="relative mx-auto mb-6 size-50 overflow-hidden rounded-full">
           <Image
             src="/about/portrait.webp"
             alt={translation("alt")}
@@ -21,13 +21,14 @@ export const AboutHero = async () => {
         </figure>
       </AnimatedContent>
       <SplitText
-        className={"text-4xl font-bold mb-2"}
+        className={"mb-2 text-4xl font-bold"}
         as={"h1"}
         splitType={"words"}>
         {translation("greeting")}
       </SplitText>
       <SplitText
-        className={"text-lg text-muted-foreground"}
+        className={"text-muted-foreground text-lg"}
+        as={"h2"}
         splitType={"words"}>
         {translation("title")}
       </SplitText>

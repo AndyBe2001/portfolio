@@ -1,11 +1,13 @@
 "use client";
 
 import { Pause, Play } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useCallback, useState } from "react";
 
 import { Button } from "@/ui/button";
 
 export const DeepLearningSound = () => {
+  const translation = useTranslations("components.showcase.deep-learning");
   const [isPlaying, setIsPlaying] = useState(false);
 
   const handleSound = useCallback(() => {
@@ -25,7 +27,11 @@ export const DeepLearningSound = () => {
   }, []);
 
   return (
-    <Button className={"w-full"} disabled={isPlaying} onClick={handleSound}>
+    <Button
+      className={"w-full"}
+      disabled={isPlaying}
+      onClick={handleSound}
+      aria-label={translation("deep-learning-sound")}>
       {isPlaying ? <Pause /> : <Play />}
     </Button>
   );

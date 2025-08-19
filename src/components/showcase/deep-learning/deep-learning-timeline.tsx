@@ -38,7 +38,7 @@ const Timeline = ({ size, duration, title, contents, end }: TimelineProps) => {
         )}
       </div>
       <div className={cn(gridSpan[size ?? 1])}>
-        <h5 className={cn("mb-2 text-base font-semibold")}>{title}</h5>
+        <p className={cn("mb-2 text-base font-semibold")}>{title}</p>
         <ul
           className={cn(
             gridDimension[size ?? 1],

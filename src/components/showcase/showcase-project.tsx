@@ -18,8 +18,8 @@ const ShowcaseProjectItem = (props: {
           <Image
             src={props.image}
             alt={props.title}
-            width={1200}
-            height={600}
+            width={768}
+            height={432}
             className={
               "transition-filter mb-4 aspect-video w-full duration-500 group-hover:blur-xs"
             }

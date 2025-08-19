@@ -178,6 +178,7 @@
         }
       },
       "deep-learning": {
+        "deep-learning-sound": "Sound used for detection suspicious activity",
         "deep-learning-hero": {
           "title": "Deep learning technology for object detection in libraries",
           "alt": "Screenshot of the project",
