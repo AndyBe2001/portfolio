@@ -26,7 +26,10 @@ export default async function DefaultFooter() {
             </Link>
           </li>
           <li>
-            <Link href="mailto:andybe034@gmail.com" aria-label={"Mail"}>
+            <Link
+              href="mailto:andybe034@gmail.com"
+              aria-label={"Mail"}
+              title={"Mail"}>
               <Mail />
             </Link>
           </li>
