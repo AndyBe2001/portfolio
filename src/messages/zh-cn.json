@@ -1,6 +1,7 @@
 {
   "components": {
     "resume-download": "下载建立",
+    "locale-switcher": "切换语言",
     "theme-switcher": {
       "toggle": "切換主題",
       "light": "浅色",

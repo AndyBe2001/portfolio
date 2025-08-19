@@ -1,6 +1,7 @@
 {
   "components": {
     "resume-download": "Download CV",
+    "locale-switcher": "Change language",
     "theme-switcher": {
       "toggle": "Toggle theme",
       "light": "Light",

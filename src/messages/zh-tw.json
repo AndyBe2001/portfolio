@@ -1,6 +1,7 @@
 {
   "components": {
     "resume-download": "下載履歷",
+    "locale-switcher": "切換語言",
     "theme-switcher": {
       "toggle": "切換主題",
       "light": "淺色",
