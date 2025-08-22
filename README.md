@@ -9,8 +9,6 @@ A multilingual, themeable portfolio built with Next.js App Router. It showcases 
 
 Live site: https://www.andytsai.com
 
----
-
 ## Features
 
 - App Router (Next.js 15) with server components
@@ -22,8 +20,6 @@ Live site: https://www.andytsai.com
 - Smooth UX polish: GSAP/Motion animations, Lenis scroll
 - Deployed-friendly to Vercel, includes @vercel/analytics and Speed Insights
 
----
-
 ## Tech Stack
 
 - Next.js 15, React 19, TypeScript
@@ -32,8 +28,6 @@ Live site: https://www.andytsai.com
 - Radix UI + class-variance-authority for components
 - Lucide Icons
 - Motion, GSAP, Lenis, Embla Carousel, OGL
-
----
 
 ## Getting Started
 
@@ -81,8 +75,6 @@ Lint:
 npm run lint
 ```
 
----
-
 ## Internationalization
 
 - Localized routes follow the pattern: `/{locale}/...` (e.g., `/en/about`, `/fr/showcase`).
@@ -91,15 +83,11 @@ npm run lint
 - Server-side locale resolution is handled in `src/i18n/request.ts`.
 - A Locale Switcher component is provided in the footer for quick switching.
 
----
-
 ## Theming
 
 - Theme is managed by `next-themes` with light/dark/system modes.
 - Use the Theme Switcher in the header to toggle modes.
 - Design tokens are defined as CSS variables in `src/app/global.css` and mapped to Tailwind via the `@theme` block.
-
----
 
 ## Project Structure
 
@@ -110,29 +98,21 @@ npm run lint
 - `src/i18n/*` – next-intl routing, navigation and request config
 - `src/app/global.css` – Tailwind v4 entry and design tokens
 
----
-
 ## Environment
 
 This project works without special environment variables. Optional services:
 
 - @vercel/analytics and @vercel/speed-insights integrate automatically on Vercel. No keys required by default.
 
----
-
 ## Deployment
 
 - Vercel is recommended. Push to your repo and import on https://vercel.com.
 - Ensure the default locale and domains are set as desired. The site is designed for edge-friendly, static-first routes where possible.
 
----
-
 ## Contributing
 
 - Issues and PRs are welcome for improvements and bug fixes.
 - Follow the existing code style (ESLint + Prettier with Tailwind plugin). Keep components accessible and localized.
-
----
 
 ## License
 
