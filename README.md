@@ -9,6 +9,19 @@ A multilingual, themeable portfolio built with Next.js App Router. It showcases 
 
 Live site: https://www.andytsai.com
 
+## Table of Contents
+
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Internationalization](#internationalization)
+- [Theming](#theming)
+- [Project Structure](#project-structure)
+- [Environment](#environment)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Features
 
 - App Router (Next.js 15) with server components
