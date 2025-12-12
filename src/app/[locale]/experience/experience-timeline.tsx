@@ -62,7 +62,7 @@ export const ExperienceTimeline = async () => {
         title={translation("overclockr.title")}
         location={translation("overclockr.location")}
         fromDate={"2024-09-12"}
-        toDate={"present"}>
+        toDate={"2025-11-30"}>
         <div className={"space-y-4"}>
           {["challenge", "solution", "learning"].map((item, index) => (
             <p key={index} className="text-muted-foreground">

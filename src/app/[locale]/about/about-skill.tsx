@@ -88,7 +88,7 @@ export const AboutSkill = async () => {
         <ScrollFloat containerClassName="mt-16 lg:mt-0 mb-4">
           {translation("title")}
         </ScrollFloat>
-        <ScrollReveal textClassName={"!text-[clamp(1.2rem,4vw,1.2rem)]"}>
+        <ScrollReveal textClassName={"text-[clamp(1.2rem,4vw,1.2rem)]!"}>
           {translation("description")}
         </ScrollReveal>
       </article>

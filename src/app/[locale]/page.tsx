@@ -2,10 +2,11 @@ import { merge } from "lodash";
 import { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
 
-import { HomeHero } from "@/components/home/home-hero";
-import { HomeNavigation } from "@/components/home/home-navigation";
 import { DEFAULT_METADATA } from "@/constants/metadata";
 import { localeAliases } from "@/i18n/routing";
+
+import { HomeHero } from "./home-hero";
+import { HomeNavigation } from "./home-navigation";
 
 export const generateMetadata = async (): Promise<Metadata> => {
   const translation = await getTranslations("pages.home.metadata");

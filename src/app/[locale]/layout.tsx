@@ -3,12 +3,12 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, setRequestLocale } from "next-intl/server";
+import { ThemeProvider } from "next-themes";
 import Script from "next/script";
 import React from "react";
 
 import { SplashScreen } from "@/components/splash-screen";
 import { routing } from "@/i18n/routing";
-import { ThemeProvider } from "@/providers/theme-provider";
 import { cn } from "@/utils/tailwindcss";
 
 export async function generateMetadata(): Promise<Metadata> {

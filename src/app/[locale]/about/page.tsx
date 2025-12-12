@@ -2,12 +2,13 @@ import { merge } from "lodash";
 import { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
 
-import { AboutHero } from "@/components/about/about-hero";
-import { AboutJourney } from "@/components/about/about-journey";
-import { AboutSkill } from "@/components/about/about-skill";
-import { AboutWorkflow } from "@/components/about/about-workflow";
 import { DEFAULT_METADATA } from "@/constants/metadata";
 import { localeAliases } from "@/i18n/routing";
+
+import { AboutHero } from "./about-hero";
+import { AboutJourney } from "./about-journey";
+import { AboutSkill } from "./about-skill";
+import { AboutWorkflow } from "./about-workflow";
 
 export const generateMetadata = async (): Promise<Metadata> => {
   const translation = await getTranslations("pages.about.metadata");

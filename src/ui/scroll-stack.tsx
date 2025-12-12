@@ -13,7 +13,7 @@ export const ScrollStackItem: React.FC<ScrollStackItemProps> = ({
   itemClassName = "",
 }) => (
   <div
-    className={`scroll-stack-card relative w-full h-80 my-8 p-6 md:12 rounded-[40px] shadow-xl box-border origin-top will-change-transform ${itemClassName}`.trim()}
+    className={`scroll-stack-card md:12 relative my-8 box-border h-80 w-full origin-top rounded-[40px] p-6 shadow-xl will-change-transform ${itemClassName}`.trim()}
     style={{
       backfaceVisibility: "hidden",
       transformStyle: "preserve-3d",
@@ -285,7 +285,7 @@ export const ScrollStack: React.FC<ScrollStackProps> = ({
 
   return (
     <div
-      className={`relative w-full h-full overflow-y-auto !overflow-x-visible ${className}`.trim()}
+      className={`relative h-full w-full overflow-x-visible! overflow-y-auto ${className}`.trim()}
       ref={scrollerRef}
       style={{
         overscrollBehavior: "auto",
@@ -295,11 +295,11 @@ export const ScrollStack: React.FC<ScrollStackProps> = ({
         transform: "translateZ(0)",
         willChange: "scroll-position",
       }}>
-      <div className="scroll-stack-inner pt-[20vh] pb-[50rem] min-h-screen !overflow-x-visible">
+      <div className="scroll-stack-inner min-h-screen overflow-x-visible! pt-[20vh] pb-200">
         {children}
       </div>
       {/* Spacer so the last pin can release cleanly */}
-      <div className="scroll-stack-end w-full h-px" />
+      <div className="scroll-stack-end h-px w-full" />
     </div>
   );
 };

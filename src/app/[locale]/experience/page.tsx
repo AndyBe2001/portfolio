@@ -2,11 +2,12 @@ import { merge } from "lodash";
 import { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
 
-import { ExperienceHero } from "@/components/experience/experience-hero";
-import { ExperienceStart } from "@/components/experience/experience-start";
-import { ExperienceTimeline } from "@/components/experience/experience-timeline";
 import { DEFAULT_METADATA } from "@/constants/metadata";
 import { localeAliases } from "@/i18n/routing";
+
+import { ExperienceHero } from "./experience-hero";
+import { ExperienceStart } from "./experience-start";
+import { ExperienceTimeline } from "./experience-timeline";
 
 export const generateMetadata = async (): Promise<Metadata> => {
   const translation = await getTranslations("pages.experience.metadata");
@@ -30,7 +31,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
 
 export default async function ExperiencePage() {
   return (
-    <main className={"!space-y-0"}>
+    <main className={"space-y-0!"}>
       <ExperienceHero />
       <ExperienceTimeline />
       <ExperienceStart />

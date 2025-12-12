@@ -6,14 +6,14 @@ import { useCallback } from "react";
 import { Button } from "@/ui/button";
 import { ShinyText } from "@/ui/shiny-text";
 
+const BLOB_URL = "https://qj1affpgixr8zsed.public.blob.vercel-storage.com/";
 const RESUME_URL: Record<string, string> = {
-  en: "https://qj1affpgixr8zsed.public.blob.vercel-storage.com/CV_EN.pdf",
-  fr: "https://qj1affpgixr8zsed.public.blob.vercel-storage.com/CV_FR.pdf",
-  "zh-cn":
-    "https://qj1affpgixr8zsed.public.blob.vercel-storage.com/CV_ZH-CN.pdf",
-  "zh-tw":
-    "https://qj1affpgixr8zsed.public.blob.vercel-storage.com/CV_ZH-TW.pdf",
+  en: `${BLOB_URL}/CV_EN.pdf`,
+  fr: `${BLOB_URL}/CV_FR.pdf`,
+  "zh-cn": `${BLOB_URL}/CV_ZH-CN.pdf`,
+  "zh-tw": `${BLOB_URL}/CV_ZH-TW.pdf`,
 };
+
 export const ResumeDownload = () => {
   const translation = useTranslations("components");
   const locale = useLocale();

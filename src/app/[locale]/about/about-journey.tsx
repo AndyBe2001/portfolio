@@ -14,7 +14,7 @@ export const AboutJourney = async () => {
       {[0, 1, 2].map(item => (
         <ScrollReveal
           key={item}
-          textClassName="!text-[clamp(1.2rem,4vw,1.2rem)] leading-relaxed">
+          textClassName="text-[clamp(1.2rem,4vw,1.2rem)]! leading-relaxed">
           {translation(`contents.${item}`)}
         </ScrollReveal>
       ))}
