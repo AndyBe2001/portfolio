@@ -6,7 +6,7 @@ import { useCallback } from "react";
 import { Button } from "@/ui/button";
 import { ShinyText } from "@/ui/shiny-text";
 
-const BLOB_URL = "https://qj1affpgixr8zsed.public.blob.vercel-storage.com/";
+const BLOB_URL = "https://qj1affpgixr8zsed.public.blob.vercel-storage.com";
 const RESUME_URL: Record<string, string> = {
   en: `${BLOB_URL}/CV_EN.pdf`,
   fr: `${BLOB_URL}/CV_FR.pdf`,
