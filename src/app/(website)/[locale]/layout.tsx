@@ -8,7 +8,7 @@ import Script from "next/script";
 import React from "react";
 
 import { SplashScreen } from "@/components/splash-screen";
-import { routing } from "@/i18n/routing";
+import { locales, routing } from "@/i18n/routing";
 import { cn } from "@/utils/tailwindcss";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -20,7 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 export async function generateStaticParams() {
-  return routing.locales.map(locale => ({ locale }));
+  return locales.map(locale => ({ locale }));
 }
 
 export default async function IndexLayout({
