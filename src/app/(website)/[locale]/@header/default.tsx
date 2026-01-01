@@ -48,7 +48,7 @@ export default async function DefaultHeader() {
             </li>
           </ul>
         </div>
-        <Link href={"/"} className={"flex-1 text-xl font-semibold"}>
+        <Link href={"/public"} className={"flex-1 text-xl font-semibold"}>
           Andy
         </Link>
         <nav className="hidden items-center gap-4 md:flex">
